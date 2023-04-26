@@ -1,5 +1,9 @@
+import  { useState } from 'react';
+import StripeContainer from './StripeContainer';
 
 export default function Nav() {
+  const [modalOpen, setModalOpen] = useState(false)
+
   return (
     <nav className='fixed w-screen absolute left-0 p-0 py-8'>
       <div className='flex justify-between px-12'>
@@ -9,13 +13,14 @@ export default function Nav() {
         <div className=''>
           <ul className='flex gap-2 items-center'>
             <li className='text-white text-2xl font-bold'>
-              <button className='rounded-lg border-2 border-solid border-white p-2'>
+              <button onClick={() => setModalOpen(true)} className='rounded-lg border-2 border-solid border-white p-2'>
                 Donate
               </button>
             </li>
             <li className='text-white text-2xl font-bold'>
-              <button className='rounded-lg p-2'>
+              <button className='rounded-lg p-2'><a href='#involved'>
                 Get Involved
+                </a>
               </button>
             </li>
             <li className='text-white text-4xl  list-none px-2'>
@@ -24,6 +29,7 @@ export default function Nav() {
           </ul>
         </div>
       </div>
+      <StripeContainer isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </nav>
   )
 }
