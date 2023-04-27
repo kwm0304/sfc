@@ -2,26 +2,6 @@ import { useState } from 'react'
 import { useElements, useStripe } from '@stripe/react-stripe-js'
 import { PaymentElement } from '@stripe/react-stripe-js'
 
-// const CARD_OPTIONS = {
-// 	iconStyle: "solid",
-// 	style: {
-// 		base: {
-// 			iconColor: "#c4f0ff",
-// 			color: "#0284C7",
-// 			fontWeight: 500,
-// 			fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
-// 			fontSize: "16px",
-// 			fontSmoothing: "antialiased",
-// 			":-webkit-autofill": { color: "#fce883" },
-// 			"::placeholder": { color: "#87bbfd" }
-// 		},
-// 		invalid: {
-// 			iconColor: "#0284C7",
-// 			color: "#38BDF8"
-// 		}
-// 	}
-// }
-
 export default function PaymentForm() {
   const stripe = useStripe()
   const elements = useElements()
@@ -33,7 +13,7 @@ export default function PaymentForm() {
   const [isProcessing, setIsProcessing] = useState(false)
   const [message, setMessage] = useState(null)
 
-  
+  //TODO: Need to set send variable amounts to server instead of hardcoded
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -71,9 +51,10 @@ export default function PaymentForm() {
   console.log('first', first)
   console.log('last', last)
   console.log("Amount in cents", inCents)
+  
   return (
     <>
-    
+  
       <form onSubmit={handleSubmit} id='payment-form'>
               <div className="grid grid-cols-6 pt-10   rounded-xl place-content-center w-3/4 mx-auto px-24">
           <div className='grid grid-cols-1 justify-items-center'>
