@@ -1,23 +1,48 @@
-import { Elements } from '@stripe/react-stripe-js'
-import { loadStripe } from '@stripe/stripe-js'
-import PaymentForm from './PaymentForm'
+import   { useEffect, useState } from 'react'
 import Modal from 'react-modal'
+import { Elements } from '@stripe/react-stripe-js'
+import PaymentForm from './PaymentForm'
+import { loadStripe } from '@stripe/stripe-js'
 
-const PUBLIC_KEY= "pk_live_51MYxIlDQgz4EcSauWvHKyhrKkvh3S8L0CoJJoTm4bh2JKDgwshqFZtyQ3TY0xfwH4t03kspmUOmE3cvfgGO39GKs00vcRlSMdM"
-const stripeTestPromise = loadStripe(PUBLIC_KEY)
+function StripeContainer({isOpen, onClose}) {
+  const [stripePromise, setStripePromise] = useState(null)
+  const [clientSecret, setClientSecret] = useState("")
+  
+  useEffect(() => {
+    fetch("http://localhost:4000/config").then(async (r) => {
+      const { publishableKey } = await r.json();
+      console.log('PK', publishableKey)
+      setStripePromise(loadStripe(publishableKey));
+      
+    });
+  }, []);
 
-export default function StripeContainer({isOpen, onClose}) {
+  useEffect(() => {
+      fetch("http://localhost:4000/payment", {
+        method: "POST",
+        body: JSON.stringify({})
+      })
+      .then(async (result) => {
+      var { clientSecret } = await result.json();
+      console.log('clientSecret', clientSecret)
+      setClientSecret(clientSecret);
+    });
+  }, []);
+
   return (
     <>
+    
     <Modal isOpen={isOpen} onRequestClose={onClose}>
-    <Elements stripe={stripeTestPromise}>
     <div className='flex justify-between'>
-        <h1 className='text-sky-600 font-bold text-5xl text-center pt-8 ml-[47%] '>Donate</h1>
+        <h1 className='text-sky-600 font-bold text-5xl text-center pt-8 ml-[47%]'>Donate</h1>
         <button onClick={onClose}><i className='fa-solid fa-xmark text-gray-300 text-5xl pr-4'></i></button>
-        </div>
+    </div>
+    <Elements stripe={stripePromise} options={{ clientSecret }}>
       <PaymentForm />
     </Elements>
     </Modal>
     </>
   )
 }
+
+export default StripeContainer;

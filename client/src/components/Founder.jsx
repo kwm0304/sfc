@@ -1,6 +1,6 @@
 import { useState } from 'react'
 //assets
-import lebron from '../assets/lebron.jpg'
+import joe from '../assets/Joe.jpg'
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger'
 import StripeContainer from './StripeContainer';
@@ -8,8 +8,6 @@ import StripeContainer from './StripeContainer';
 const Founder = () => {
   const [counterOn, setCounterOn] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
-
-
 
   return (
 <>
@@ -20,15 +18,15 @@ const Founder = () => {
       <h3 className='text-sky-600 text-2xl font-bold mx-12 py-8'>LUKE 10:2</h3>
       <button onClick={() => setModalOpen(true)} className='rounded-full bg-sky-600 text-white font-medium px-3 py-2 text-xl w-36 outline-white border-none hover:drop-shadow-lg hover:translate-y-2 hover:bg-sky-400 hover:font-bold hover:cursor-pointer'>DONATE</button>
       <hr className='h-px mt-32 mb-12 mx-44 bg-sky-600 border-0'></hr>
-      <h2 className='text-4xl text-sky-600 font-bold'>MEET THE FOUNDER</h2>
+      <h2 className='text-4xl text-sky-600 font-bold'>WHO WE ARE</h2>
       <hr className='h-px mt-12 mx-44 bg-sky-600 border-0'></hr>
 
       <figure className='py-12'>
         <div className='grid grid-cols-2   '>
           <div className='col  relative p ml-20'>
             <div className=" w-full yo">
-            <div className=' bg-sky-400 pic p-4 w-64 h-24 rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Lebron James</div>
-            <img src={lebron} width={400} className='rounded-lg'/>
+            <div className=' bg-sky-400 pic p-4 w-64 h-24 rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Joe McCutcheon</div>
+            <img src={joe} width={650} className='rounded-lg'/>
           </div>
           </div>
           <div className='col text-white  grid place-content-center mr-24'>

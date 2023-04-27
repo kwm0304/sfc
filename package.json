@@ -2,14 +2,18 @@
   "name": "sfc",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/server.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "concurrently \"cd"
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:server" : "cd server && npm start",
+    "start:client" : "cd client && npm run dev"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kwm0304/sfc.git"
+  },
+  "dependencies": {
+    "concurrently": "^8.0.1"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +21,5 @@
   "bugs": {
     "url": "https://github.com/kwm0304/sfc/issues"
   },
-  "homepage": "https://github.com/kwm0304/sfc#readme",
-  "dependencies": {
-    "concurrently": "^8.0.1"
-  }
+  "homepage": "https://github.com/kwm0304/sfc#readme"
 }

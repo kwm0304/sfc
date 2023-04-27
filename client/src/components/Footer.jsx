@@ -20,10 +20,11 @@ export default function Footer() {
         </path>
       </svg>
       <div className='bg-sky-600 flex justify-center pb-4'>
-        <a href='mailto:josiahmallen88@gmail.com'><i className='fa-solid fa-envelope text-white text-5xl px-4'></i></a>
+        <a href='mailto:solesforchrist@outlook.com'><i className='fa-solid fa-envelope text-white text-5xl px-4'></i></a>
         <a href='tel:704-796-9267'><i className='fa-solid fa-phone text-white text-5xl px-4'></i></a>   
         <a href='https://m.facebook.com/profile.php?id=100088427994089&locale2=hi_IN&_rdr'><i className='fa-brands fa-facebook text-white text-5xl px-4'></i></a>
       </div>
+      <p className="bg-sky-600 text-center text-white text-xs">Soles for Christ is a registered 501(c)(3) in North Carolina. Employer ID Number: 88-4020270</p>
     </div>
   )
 }
