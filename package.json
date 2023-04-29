@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.jsx",
+  "engines": {
+    "node": "16.13.0"
+  },
   "scripts": {
     "start" : "node server/server.jsx",
     "develop": "concurrently \"npm run start:server\" \"npm run start:client\"",
