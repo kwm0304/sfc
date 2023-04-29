@@ -21,17 +21,17 @@ const Founder = () => {
       <h2 className='text-4xl text-sky-600 font-bold xs:py-4 xs:text-3xl md:text-4xl'>WHO WE ARE</h2>
       <hr className='h-px lg:mt-12 lg:mx-44 xl:mt-12 xl:mx-44 bg-sky-600 border-0 xs:mt-12 xs:mx-4 xs:mb-2 xs:mt-4'></hr>
 
-      <figure className='py-12 xs:grid xs:grid-cols-1 xs:place-content-center xl:items-center'>
-        <div className='grid grid-cols-2  xs:grid-cols-1 xs:mx-auto sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2'>
+      <figure className='py-12 grid xl:gap-4 xs:grid xs:grid-cols-1 xs:place-content-center md:align-items-center lg:place-items-center xl:align-items-center'>
+        <div className='grid grid-cols-2  xs:grid-cols-1 xs:mx-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2'>
 
-          <div className='col xs:mx-6 xl:mx-0 relative p ml-20 md:pb-8 md:mx-32 lg:mx-8'>
+          <div className='col xs:mx-6 xl:mx-0 relative p ml-20 md:pt-20 md:mx-32 lg:mx-8'>
             <div className=" w-full yo xs:justify-center md:ml-14">
-            <div className=' bg-sky-400 pic p-4 w-64 h-24 xs:w-40 xs:h-16 xs:text-base  rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Joe McCutcheon</div>
-            <img src={joe} width={650} className='rounded-lg'/>
+            <div className=' bg-sky-400 pic p-4 w-64 h-24 xs:w-40 md:w-48 xs:h-16 xs:text-base  rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Joe McCutcheon</div>
+            <img src={joe} width={650} className='rounded-lg md:w-5/6'/>
           </div>
           </div>
 
-          <div className='col text-white   place-content-center xs:mr-0 xl:mr-40 mr-24 xs:pt-4'>
+          <div className='col text-white  xl:pt-36 place-content-center xs:mr-0 xl:mr-40 mr-24 xs:pt-4'>
           <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
       <div className='grid grid-col gap-4 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 xs:text-base xs:mx-auto xs:pl-2 xs:gap-0 xs:grid-cols-3 xs:justify-items-between md:pl-20 xl:pl-0 w-screen xl:w-full'>
           
