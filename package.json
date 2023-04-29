@@ -4,9 +4,12 @@
   "description": "",
   "main": "server/server.jsx",
   "scripts": {
-    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start" : "node server/server.jsx",
+    "develop": "concurrently \"npm run start:server\" \"npm run start:client\"",
     "start:server" : "cd server && npm start",
-    "start:client" : "cd client && npm run dev"
+    "start:client" : "cd client && npm run dev",
+    "install" : "cd server && npm i && cd ../client && npm i",
+    "build" : "cd client && npm run build"
   },
   "repository": {
     "type": "git",
