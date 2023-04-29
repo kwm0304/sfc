@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const  createCheckoutSession  = require('./checkout')
 
+const PORT = process.env.PORT
 //middleware
 app.use(express.static("../client"))
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -17,7 +18,7 @@ app.get("/config", (req, res) => res.send({ publishableKey: process.env.STRIPE_P
 //POST payment
 app.post("/payment", createCheckoutSession)
 
-app.listen(4000, () => {
-  console.log("Server is listening on port 4000")
+app.listen(PORT, () => {
+  console.log('Server is listening ')
 })
 
