@@ -1,86 +1,70 @@
 import { useState } from 'react'
-import { useElements, useStripe } from '@stripe/react-stripe-js'
-import { PaymentElement } from '@stripe/react-stripe-js'
+import {  useStripe } from '@stripe/react-stripe-js'
+import { fetchFromAPI } from '../helpers'
 
 export default function PaymentForm() {
-  const stripe = useStripe()
-  const elements = useElements()
-
-  // const [success, setSuccess] = useState(false)
   const [amount, setAmount] = useState(0)
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
-  const [isProcessing, setIsProcessing] = useState(false)
-  const [message, setMessage] = useState(null)
-
-  //TODO: Need to set send variable amounts to server instead of hardcoded
+  const stripe = useStripe()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    
+    
+   const response = await fetchFromAPI('payment', {
+    body: { line_items: [{ price: amount, quantity: 1}], customer_email: email }
+    
+   })
 
-    if (!stripe || !elements) {
-      //TODO: disable form submission until stripe is loaded
-      return
-    }
-    setIsProcessing(true)
+   const { sessionId } = response;
+   const { error } = await stripe.redirectToCheckout({
+    sessionId
+   });
+   console.log(response)
 
-    const { error, paymentIntent } = await stripe.confirmPayment({
-      elements,
-      confirmParams: {
-        return_url: `${window.location.origin}`
-      },
-      redirect: "if_required"
-    })
-    if (error === 'card_error' || error === 'validation_error') {
-      setMessage(error.message)
-    }  else if (paymentIntent && paymentIntent.status === 'succeeded') {
-      setMessage("Payment status: " + paymentIntent.status)
-    } else {
-      setMessage("Unexpected error")
-    }
-    setIsProcessing(false)
+   if (error) {
+    console.log(error)
+   }
   }
   //records?
   const first = name.split(" ").shift()
   const last = name.split(" ").pop()
-  const inCents = amount * 100;
+  
   //frog on a log
   console.log("amount", amount)
   console.log("email", email)
   console.log("name", name)
   console.log('first', first)
   console.log('last', last)
-  console.log("Amount in cents", inCents)
   
   return (
     <>
   
       <form onSubmit={handleSubmit} id='payment-form'>
-              <div className="grid grid-cols-6 pt-10   rounded-xl place-content-center w-3/4 mx-auto px-24">
+              <div className="grid grid-cols-5 pt-10   rounded-xl place-content-center w-3/4 mx-auto px-24">
           <div className='grid grid-cols-1 justify-items-center'>
-            <input type='radio' name='amount' value={amount} onClick={() => setAmount(5)}/>
-            <label>$5</label>
-          </div>
-          <div className='grid grid-cols-1 justify-items-center'>
-            <input type='radio' name='amount' value={amount} onClick={() => setAmount(10)}/>
-            <label>$10</label>
-          </div>
-          <div className='grid grid-cols-1 justify-items-center'>
-            <input type='radio' name='amount' value={amount} onClick={() => setAmount(20)}/>
-            <label>$20</label>
-          </div>
-          <div className='grid grid-cols-1 justify-items-center '>
-            <input type='radio' name='amount'  value={amount} onClick={() => setAmount(50)} className='border-2 border-solid border-sky-600'/>
+            <input type='radio' name='amount' value={amount} onClick={() => setAmount('price_1N20CNDQgz4EcSauRVxxX3dw')} />
             <label>$50</label>
           </div>
           <div className='grid grid-cols-1 justify-items-center'>
-            <input type='radio' name='amount' value={amount} onClick={() => setAmount(100)}/>
+            <input type='radio' name='amount' value={amount} onClick={() => setAmount('price_1N20EQDQgz4EcSauT2PT3uiA')} />
             <label>$100</label>
           </div>
-          <div className='grid grid-cols-1 justify-items-center py-8'>
-          <input type='number' placeholder='75' value={amount} onChange={(e) => setAmount((e.target.value))} name='amount' className='border-4 border-solid border-sky-600 rounded-full w-28  h-10 text-center'/>
-          <label className='text-xl text-sky-600 font-semibold text-center py-2' >Other</label>
-        </div>
+          <div className='grid grid-cols-1 justify-items-center'>
+            <input type='radio' name='amount' value={amount} onClick={() => setAmount('price_1N20mADQgz4EcSaurCmD5qXQ')} />
+            <label>$200</label>
+          </div>
+          <div className='grid grid-cols-1 justify-items-center '>
+            <input type='radio' name='amount'  value={amount} onClick={() => setAmount('price_1N20FvDQgz4EcSauB8MZ33H4')} className='border-2 border-solid border-sky-600'/>
+            <label>$420</label>
+          </div>
+          <div className='grid grid-cols-1 justify-items-center '>
+            <input type='radio' name='amount'  value={amount} onClick={() => setAmount('price_1N20H7DQgz4EcSauhloKyAvv')} className='border-2 border-solid border-sky-600'/>
+            <label>Other</label>
+          </div>
+          
+          
         </div>
         <div className="flex">
         <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
@@ -92,12 +76,10 @@ export default function PaymentForm() {
           <label className='text-xl text-sky-600 font-semibold text-center py-2'>Email</label>
         </div>
         </div>
-        <PaymentElement id='payment-element' />
         <div className="flex justify-center py-12">
-        <button disabled={isProcessing || !stripe || !elements} id="submit" className='bg-sky-600 text-white rounded p-2 font-bold uppercase text-xl'>
-        <span id="button-text">
-          {isProcessing ? "Processing ... " : "Pay now"}
-        </span>
+        <button  id="submit" className='bg-sky-600 text-white rounded p-2 font-bold uppercase text-xl'>
+        SUBMIT
+       
       </button>
         </div>
       </form>
