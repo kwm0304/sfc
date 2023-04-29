@@ -42,7 +42,7 @@ export default function PaymentForm() {
     <>
   
       <form onSubmit={handleSubmit} id='payment-form'>
-              <div className="grid grid-cols-5 pt-10   rounded-xl place-content-center w-3/4 mx-auto px-24">
+              <div className="grid grid-cols-5 pt-10  text-sky-600 font-semibold rounded-xl place-content-center w-3/4 mx-auto px-24 xs:px-0 xs:gap-16">
           <div className='grid grid-cols-1 justify-items-center'>
             <input type='radio' name='amount' value={amount} onClick={() => setAmount('price_1N20CNDQgz4EcSauRVxxX3dw')} />
             <label>$50</label>
@@ -66,7 +66,7 @@ export default function PaymentForm() {
           
           
         </div>
-        <div className="flex">
+        <div className="flex xs:grid xs:grid-cols-1 xs:mt-12">
         <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
           <input type='text' value={name} onChange={(e) => setName(e.target.value)} placeholder='First Last' className='border-4 border-solid border-sky-600 rounded-full text-center w-72 h-10 active:border-2 active:border-solid active:border-sky-600'/>
           <label className='text-xl text-sky-600 font-semibold text-center py-2'>Name</label>
@@ -77,7 +77,7 @@ export default function PaymentForm() {
         </div>
         </div>
         <div className="flex justify-center py-12">
-        <button  id="submit" className='bg-sky-600 text-white rounded p-2 font-bold uppercase text-xl'>
+        <button  id="submit" className='bg-sky-600 text-white rounded p-2 font-bold uppercase text-xl '>
         SUBMIT
        
       </button>

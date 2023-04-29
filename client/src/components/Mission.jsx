@@ -39,16 +39,16 @@ export default function Mission() {
   return (
     <>
     <section className='bg-sky-600 py-2'>
-    <hr className='h-px mt-24 mb-12 mx-44 bg-white border-0'></hr>
+    <hr className='h-px lg:mt-12 lg:mx-44 xl:mt-20 xl:mb-12 xl:mx-44 mt-12 mx-44 bg-white border-0 xs:mt-12 xs:mx-4 xs:mb-2 xs:mt-12'></hr>
       <h2 className='text-4xl text-white text-center font-bold'>THE MISSION</h2>
-      <hr className='h-px mt-12 mx-44 bg-white border-0'></hr>
-    <div className='max-w-[1400px] h-[780px] w-full m-auto px-4 py-12 relative group '>
+      <hr className='h-px lg:mt-12 lg:mx-44 xl:mt-12 xl:mx-44 bg-white border-0 xs:mt-12 xs:mx-4 xs:mb-2 xs:mt-4'></hr>
+    <div className='max-w-[1400px] xl:h-[780px] h-[780px] xs:h-[390px] md:h-[600px] w-full m-auto px-4 py-12 relative group '>
       <div 
       style={{ backgroundImage: `url(${slides[currentIndex].url})` }}      
       className="w-full h-full rounded-2xl bg-center bg-cover  duration-500 ">
       </div>
-      <div className='bg-sky-400 absolute w-2/3 bottom-14 left-[18%] opacity-70 hover:opacity-100 rounded-lg p-2 mb-2 pb-2 text-center text-xl absolute text-white'>
-        <h5 className='text-center py-2'>{slides[currentIndex].textTitle}</h5>
+      <div className='bg-sky-400 absolute w-2/3 bottom-14 left-[18%] opacity-70 hover:opacity-100 rounded-lg p-2 mb-2 pb-2 text-center text-xl absolute text-white xs:left-0 xs:h-1/3 xs:w-5/6 xs:mx-8 xs:text-clip xs:overflow-auto xs:text-base md:left-10 md:h-1/3 md:text-xl lg:left-12'>
+        <h5 className='text-center py-2 md:font-semibold'>{slides[currentIndex].textTitle}</h5>
         {slides[currentIndex].text}
       </div>
       {/*arrows*/}

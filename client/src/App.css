@@ -1,7 +1,14 @@
+*::before {
+  margin: 0;
+  padding: 0;
+}
+*::after {
+  padding: 0;
+  margin: 0;
+}
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
 }
 
 #root {
@@ -12,6 +19,8 @@
 body {
   width: 100vw;
   font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 .StripeElement {
