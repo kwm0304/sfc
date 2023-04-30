@@ -18,8 +18,8 @@ async function createCheckoutSession(req, res) {
             line_items,
             customer_email, 
             //will be the url the deployed app will be linked to
-            success_url: 'http://127.0.0.1:5173/',
-            cancel_url: 'http://127.0.0.1:5173/',
+            success_url: 'https://soles-for-christ.herokuapp.com/',
+            cancel_url: 'https://soles-for-christ.herokuapp.com/',
             submit_type: 'donate'
         });
         res.status(200).json({ sessionId: session.id, }) && res.redirect(303, session.url)

@@ -1,21 +1,24 @@
 import  React, { useState } from 'react'
+import distShoes from '../assets/Distributingshoes1.jpg'
+import smilingGirls from '../assets/SmilingGirls.jpg'
+import shoePhoto2 from '../assets/ShoePhoto2.jpg'
 
 export default function Mission() {
   const slides = [
     {
-      url: 'https://s.hdnux.com/photos/10/02/17/2106329/6/1200x0.jpg',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse in est. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Commodo quis imperdiet massa tincidunt. Eget duis at tellus at urna condimentum mattis pellentesque id. Ac odio tempor orci dapibus ultrices in iaculis. Eu augue ut lectus arcu. Ullamcorper morbi tincidunt ornare massa eget egestas. Viverra orci sagittis eu volutpat odio. Tempor nec feugiat nisl pretium fusce id. Scelerisque fermentum dui faucibus in. Laoreet id donec ultrices tincidunt arcu non sodales neque. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Quis vel eros donec ac odio. Augue neque gravida in fermentum et. Aliquet sagittis id consectetur purus ut faucibus. Porta non pulvinar neque laoreet suspendisse interdum consectetur.',
-      textTitle: 'Slide1'
+      url: distShoes,
+      text: 'The ongoing mission of SOLES FOR CHRIST is to collect, package, and ship new or like new footwear to Iglesia de Jesucristo Columna de Amor in El Salvador for distribution to impoverished women and children in the surrounding rural areas. The footwear is handed out during the church’s bi-annul outreach event called “Dia del Nino”. The Dia del Nino events are held in June/July and December of each year. ',
+      textTitle: 'What We Do'
     },
     {
-      url: 'https://www.familysearch.org/en/wiki/img_auth.php/thumb/c/cf/El_Salvador_Map.png/600px-El_Salvador_Map.png',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse in est. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Commodo quis imperdiet massa tincidunt. Eget duis at tellus at urna condimentum mattis pellentesque id. Ac odio tempor orci dapibus ultrices in iaculis. Eu augue ut lectus arcu. Ullamcorper morbi tincidunt ornare massa eget egestas. Viverra orci sagittis eu volutpat odio. Tempor nec feugiat nisl pretium fusce id. Scelerisque fermentum dui faucibus in. Laoreet id donec ultrices tincidunt arcu non sodales neque. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Quis vel eros donec ac odio. Augue neque gravida in fermentum et. Aliquet sagittis id consectetur purus ut faucibus. Porta non pulvinar neque laoreet suspendisse interdum consectetur.',
-      textTitle: 'Slide2'
+      url: smilingGirls,
+      text: 'Our current goal is to send 2,000+ pairs of shoes every March and August in order to allow for the 10-12 week transit time from North Carolina to El Salvador. The Dia del Nino event held in December of 2022 had approximately 1,600 children attend, with a total attendance of over 2,000 locals.',
+      textTitle: 'Goals'
     },
     {
-      url: 'https://www.gannett-cdn.com/-mm-/2af50627e08a54ba924c070db49cc7d9956a7f02/c=0-61-600-399/local/-/media/2020/08/24/Erie/ghows-PA-200619423-633b8cb2.jpg?width=1200&disable=upscale&format=pjpg&auto=webp',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse in est. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Commodo quis imperdiet massa tincidunt. Eget duis at tellus at urna condimentum mattis pellentesque id. Ac odio tempor orci dapibus ultrices in iaculis. Eu augue ut lectus arcu. Ullamcorper morbi tincidunt ornare massa eget egestas. Viverra orci sagittis eu volutpat odio. Tempor nec feugiat nisl pretium fusce id. Scelerisque fermentum dui faucibus in. Laoreet id donec ultrices tincidunt arcu non sodales neque. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Quis vel eros donec ac odio. Augue neque gravida in fermentum et. Aliquet sagittis id consectetur purus ut faucibus. Porta non pulvinar neque laoreet suspendisse interdum consectetur.',
-      textTitle: 'Slide3'
+      url: shoePhoto2,
+      text: 'YOUR help is greatly needed and profoundly appreciated. We are in constant demand of new or lightly used infant- young adult shoes, sandals, slippers, boots, etc. as well as all types of adult women’s footwear. Adult men’s footwear can be used but they have the lowest priority.',
+      textTitle: 'Your Impact'
     }
   ]
 
@@ -47,8 +50,8 @@ export default function Mission() {
       style={{ backgroundImage: `url(${slides[currentIndex].url})` }}      
       className="w-full h-full rounded-2xl bg-center bg-cover  duration-500 ">
       </div>
-      <div className='bg-sky-400 absolute w-2/3 bottom-14 left-[18%] opacity-70 hover:opacity-100 rounded-lg p-2 mb-2 pb-2 text-center text-xl absolute text-white xs:left-0 xs:h-1/3 xs:w-5/6 xs:mx-8 xs:text-clip xs:overflow-auto xs:text-base md:left-10 md:h-1/3 md:text-xl lg:left-12'>
-        <h5 className='text-center py-2 md:font-semibold'>{slides[currentIndex].textTitle}</h5>
+      <div className='bg-sky-400 absolute w-2/3 bottom-14 xl:pt-12 xl:px-8 left-[18%] opacity-70 hover:opacity-100 rounded-lg items-center p-2 mb-2 pb-2 text-center text-xl absolute text-white xs:left-0 xs:h-1/3 xs:w-5/6 xs:mx-8 xs:text-clip xs:overflow-auto xs:text-base md:left-10 md:h-1/3 md:text-xl lg:left-12'>
+        <h5 className='text-center py-2 md:font-semibold xl:text-2xl uppercase'>{slides[currentIndex].textTitle}</h5>
         {slides[currentIndex].text}
       </div>
       {/*arrows*/}
