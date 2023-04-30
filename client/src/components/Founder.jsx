@@ -22,7 +22,7 @@ const Founder = () => {
       <h2 className='text-4xl text-sky-600 font-bold xs:py-4 xs:text-3xl md:text-4xl'>WHO WE ARE</h2>
       <hr className='h-px lg:mt-12 lg:mx-44 xl:mt-12 xl:mx-44 bg-sky-600 border-0 xs:mt-12 xs:mx-4 xs:mb-2 xs:mt-4'></hr>
 
-      <div className="grid grid-cols-2 place-content-between gap-8">
+      <div className="grid grid-cols-2 xs:grid-cols-1 place-content-between gap-8">
       <div className='col text-white  xl:pt-40 place-content-center xs:mr-0  xl:ml-12 xs:pt-4'>
             <span className='text-4xl xl:pl-4 text-sky-600 xs:text-3xl xs:pt-3 xs:mx-2'><i className="fa-solid fa-quote-left float-left pb-4"></i></span>
             <div className='rounded-lg bg-sky-400 p-6 xs:mx-6 xl:ml-12'>
