@@ -40,7 +40,7 @@ His love of the Lord, a servant’s heart, and an ultra-relational personality l
       </div>
       </div>
       <figure className='py-12 grid xl:gap-4 xs:grid xs:grid-cols-1 xs:place-content-center md:align-items-center lg:place-items-center xl:align-items-center'>
-        <div className='grid grid-cols-2  xs:grid-cols-1 xs:mx-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2'>
+        <div className='grid grid-cols-2  xs:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 xs:mx-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2'>
 
           <div className='col xs:mx-6 xl:mx-0 relative p ml-20 md:pt-20 md:mx-32 lg:mx-8'>
             <div className=" w-full yo xs:justify-center md:ml-14">

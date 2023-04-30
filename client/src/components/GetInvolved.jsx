@@ -10,6 +10,7 @@ export default function GetInvolved() {
       <hr className='h-px lg:mt-12 lg:mx-44 xl:mt-20 xl:mb-12 xl:mx-44 mt-12 mx-44 bg-sky-600 border-0 xs:mt-12 xs:mx-4 xs:mb-2 xs:mt-12'></hr>
       <h2 className='text-4xl text-sky-600 text-center font-bold'>GET INVOLVED</h2>
       <hr className='h-px lg:mt-12 lg:mx-44 xl:mt-12 xl:mx-44 bg-sky-600 xl:mb-20 border-0 xs:mt-12 xs:mx-4 xs:mb-2 xs:mt-4'></hr>
+      <h2>Donating Shoes</h2>
       <div className="lg:grid xl:grid xl:grid-cols-3 md:grid md:grid-cols-2 md:gap-8 xl:mx-auto lg:grid-cols-3 xs:grid-cols-1 xs:gap-4 xs:mx-8 justify-items-center mb-12">
         <div className='google-map md:ml-32 my-auto'>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.2113251833807!2d-80.68036822359117!3d35.42479474401709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8854045545fe0e1d%3A0x4f21e1941dda756e!2s732%20Kannapolis%20Pkwy%2C%20Concord%2C%20NC%2028027!5e0!3m2!1sen!2sus!4v1682811538285!5m2!1sen!2sus" width="500" height="375" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
