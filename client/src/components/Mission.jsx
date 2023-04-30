@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import distributingshoes1 from '../assets/distributingshoes.jpg'
-import smilingGirls from '../assets/smilingGirls.jpg'
+import smilingGirls from '../assets/smilinggirls.jpg'
 import shoePhoto from '../assets/shoePhoto.jpg'
 
 export default function Mission() {
