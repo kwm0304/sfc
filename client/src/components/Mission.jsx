@@ -1,12 +1,12 @@
-import  React, { useState } from 'react'
-import distShoes from '../assets/distributingshoes1.jpg'
+import { useState } from 'react'
+import distributingshoes1 from '../assets/distributingshoes1.jpg'
 import smilingGirls from '../assets/smilingGirls.jpg'
 import shoePhoto2 from '../assets/shoePhoto2.jpg'
 
 export default function Mission() {
   const slides = [
     {
-      url: distShoes,
+      url: distributingshoes1,
       text: 'The ongoing mission of SOLES FOR CHRIST is to collect, package, and ship new or like new footwear to Iglesia de Jesucristo Columna de Amor in El Salvador for distribution to impoverished women and children in the surrounding rural areas. The footwear is handed out during the church’s bi-annul outreach event called “Dia del Nino”. The Dia del Nino events are held in June/July and December of each year. ',
       textTitle: 'What We Do'
     },
