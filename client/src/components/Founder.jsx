@@ -33,8 +33,8 @@ His love of the Lord, a servant’s heart, and an ultra-relational personality l
             </div>
           </div>
       <div className="relative">
-      <div className="col xl:pt-16 xl:ml-40">
-      <div className=' bg-sky-400 pic p-4 w-64 h-24 xs:w-40 md:w-48 xs:h-16 xs:text-base  xl: xl:mr-6 right-64 rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Allens & Hayes</div>
+      <div className="col xl:pt-16 xl:ml-40 md:mr-24 lg:mr-20">
+      <div className=' bg-sky-400 pic p-4 w-64 h-24 xs:w-40 md:w-48 md:mr-24  xs:h-16 xs:text-base  xl: xl:mr-6 right-64 rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Allens & Hayes</div>
         <img src={lebron} width={500} height={200} className='rounded-lg '/>
       </div>
       </div>
@@ -70,9 +70,9 @@ His love of the Lord, a servant’s heart, and an ultra-relational personality l
         </ScrollTrigger>
           </div>
 
-          <div className='col text-white  xl:pt-16 place-content-center xs:mr-0 xl:mr-40 mr-24 xs:pt-4'>
+          <div className='col text-white lg:ml-12 md:mr-24 xs:mr-0 xl:mr-40 mr-24 xs:pt-4'>
           
-            <div className='rounded-lg bg-sky-400 p-6 xs:mx-6 xl:mx-0 xl:mt-24'>
+            <div className='rounded-lg bg-sky-400 p-6 xs:mx-6 xl:mx-0 xl:mt-24 lg:mt-0 md:mt-0 lg:mt-0'>
               <p className='text-2xl xs:text-lg xs:font-semibold'>
 Firstly, good footwear is pricey and hard to come by for a lot of children growing up in the impoverished rural areas surrounding San Salvador. Being able to distribute a continuous supply of free footwear to the growing children in these communities would be a huge blessing to them! And secondly, Joe was the late owner of Camerakidz, which does a lot of photography work for local schools. Already having working relationships with the directors of these schools, he asked them for support with collecting shoes from their respective student bodies. Thankfully, many were glad to lend a helping hand. From there, the mission was off and running.<br/><br/>  
 With the help of innumerable people along the way, Joe oversaw and coordinated the collection and shipment of approximately 10,000 pairs of footwear to El Salvador. Along with the shoe mission, Joe would regularly travel to visit Iglesia de Jesucristo Columna de Amor. He always extended an invitation to anyone he encountered to join him on his travels if they were interested. On what would end up being his last visit to El Salvador in December of 2021, Jonathan Hayes and Josiah Allen joined Joe for their first trip there. The experience was so powerful to them both that they decided they wanted to continue to aid Joe any way they could in providing support to the church and people of El Salvador. <br/><br/>

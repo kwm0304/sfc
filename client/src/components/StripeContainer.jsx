@@ -8,8 +8,9 @@ function StripeContainer({isOpen, onClose}) {
   const [stripePromise, setStripePromise] = useState(null)
 
   useEffect(() => {
-    fetch("https://soles-for-christ.herokuapp.com/config").then(async (r) => {
+    fetch("/config").then(async (r) => {
       const { publishableKey } = await r.json();
+      console.log('Hello')
       console.log('PK', publishableKey)
       setStripePromise(loadStripe(publishableKey));
     });
@@ -17,7 +18,7 @@ function StripeContainer({isOpen, onClose}) {
 
   const modalStyle = {
     content: {
-      height: '70vh'
+      height: '80vh'
     }
   }
   return (
