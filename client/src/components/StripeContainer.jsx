@@ -8,7 +8,7 @@ function StripeContainer({isOpen, onClose}) {
   const [stripePromise, setStripePromise] = useState(null)
 
   useEffect(() => {
-    fetch("https://soles-for-christ.herokuapp.com/config").then(async (r) => {
+    fetch("/config").then(async (r) => {
       const { publishableKey } = await r.json();
       console.log('PK', publishableKey)
       setStripePromise(loadStripe(publishableKey));
