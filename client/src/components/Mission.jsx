@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import distributingshoes1 from '../assets/distributingshoes1.jpg'
+import distributingshoes1 from '../assets/distributingshoes.jpg'
 import smilingGirls from '../assets/smilingGirls.jpg'
-import shoePhoto2 from '../assets/shoePhoto2.jpg'
+import shoePhoto from '../assets/shoePhoto.jpg'
 
 export default function Mission() {
   const slides = [
@@ -16,7 +16,7 @@ export default function Mission() {
       textTitle: 'Goals'
     },
     {
-      url: shoePhoto2,
+      url: shoePhoto,
       text: 'YOUR help is greatly needed and profoundly appreciated. We are in constant demand of new or lightly used infant- young adult shoes, sandals, slippers, boots, etc. as well as all types of adult women’s footwear. Adult men’s footwear can be used but they have the lowest priority.',
       textTitle: 'Your Impact'
     }
