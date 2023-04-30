@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import distributingshoes1 from '../assets/distributingshoes.jpg'
-import smilingGirls from '../assets/smilinggirls.jpg'
+import smilinggirls from '../assets/smilinggirlsaswell.jpg'
 import shoePhoto from '../assets/shoePhoto.jpg'
 
 export default function Mission() {
@@ -11,7 +11,7 @@ export default function Mission() {
       textTitle: 'What We Do'
     },
     {
-      url: smilingGirls,
+      url: smilinggirls,
       text: 'Our current goal is to send 2,000+ pairs of shoes every March and August in order to allow for the 10-12 week transit time from North Carolina to El Salvador. The Dia del Nino event held in December of 2022 had approximately 1,600 children attend, with a total attendance of over 2,000 locals.',
       textTitle: 'Goals'
     },
