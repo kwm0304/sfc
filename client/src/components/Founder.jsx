@@ -22,9 +22,9 @@ const Founder = () => {
       <h2 className='text-4xl text-sky-600 font-bold xs:py-4 xs:text-3xl md:text-4xl'>WHO WE ARE</h2>
       <hr className='h-px lg:mt-12 lg:mx-44 xl:mt-12 xl:mx-44 bg-sky-600 border-0 xs:mt-12 xs:mx-4 xs:mb-2 xs:mt-4'></hr>
 
-      <div className="grid grid-cols-2 xs:grid-cols-1 place-content-between gap-8">
-      <div className='col text-white  xl:pt-40 place-content-center xs:mr-0  xl:ml-12 xs:pt-4'>
-            <span className='text-4xl xl:pl-4 text-sky-600 xs:text-3xl xs:pt-3 xs:mx-2'><i className="fa-solid fa-quote-left float-left pb-4"></i></span>
+      <div className="grid grid-cols-2 xs:grid-cols-1 md:grid-cols-2 place-content-between gap-8">
+      <div className='col text-white  xl:pt-40 place-content-center xs:mr-0 xs:mx-6 xl:ml-12 xs:pt-4'>
+            <span className='text-4xl xl:pl-4 text-sky-600 xs:text-3xl xs:pt-3 xs:right-12  xs:mx-2'><i className="fa-solid fa-quote-left float-left pb-4"></i></span>
             <div className='rounded-lg bg-sky-400 p-6 xs:mx-6 xl:ml-12'>
               <p className='text-2xl xs:text-lg xs:font-semibold'>SOLES FOR CHRIST was formed in September of 2022 by Jonathan & Lauren Hayes, and Josiah & Francesca Allen, but the mission itself was going on LONG before that.  
 For almost a decade prior to the formation of Soles for Christ, the late Joe McCutcheon faithfully spearheaded the collection and shipment of used and like new footwear to El Salvador. <br/><br/>
@@ -51,7 +51,7 @@ His love of the Lord, a servant’s heart, and an ultra-relational personality l
           <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
           <div className='grid grid-col gap-4 xs:ml-12 xs:my-6 xl:grid-cols-2 xl:justify-items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xl:pb-12 xl:mt-24 xs:text-base xs:mx-auto xs:pl-2 xs:gap-0 xs:grid-cols-3 xs:justify-items-between md:pl-20 xl:pl-0 w-screen xl:w-full xl:gap-4 '>
           
-          <div className='inline-block  rounded-full h-64 w-64 xl:h-64 xl:w-64 md:h-40 xs:w-32 xs:h-32 md:w-40 md:text-xl s:w-32 xs:flex xs:flex-col xs:p-0 xs:h-32 text-center bg-sky-400 p-2  shadow-xl hover:border hover:border-sky-400 hover:ring-1 hover:ring-sky-400 focus:outline-none focus:ring'>
+          <div className='inline-block  rounded-full h-64 w-64 xl:h-64 xl:w-64 md:h-40 xs:w-32 xs:h-32 md:w-40 md:mr-8 md:text-xl sm:w-32 xs:flex xs:flex-col xs:p-0 xs:h-32 text-center bg-sky-400 p-2  shadow-xl hover:border hover:border-sky-400 hover:ring-1 hover:ring-sky-400 focus:outline-none focus:ring'>
             <h2 className='pt-8 font-bold text-white xs:pt-3 xl:text-3xl xl:pt-12'>Donated</h2>
             <span className='inline-block rounded-full text-white text-4xl pt-6 p-3 md:pt-2 xs:m-0 xs:py-0'>
             <i className="fa-solid fa-shoe-prints text-center pt-2 md:text-md md:p-0 xs:pt-0" />
@@ -70,7 +70,7 @@ His love of the Lord, a servant’s heart, and an ultra-relational personality l
         </ScrollTrigger>
           </div>
 
-          <div className='col text-white lg:ml-12 md:mr-24 xs:mr-0 xl:mr-40 mr-24 xs:pt-4'>
+          <div className='col text-white xs:mr-8 lg:ml-12 md:mr-24 xs:mr-0 xl:mr-40 mr-24 xs:pt-4'>
           
             <div className='rounded-lg bg-sky-400 p-6 xs:mx-6 xl:mx-0 xl:mt-24 lg:mt-0 md:mt-0 lg:mt-0'>
               <p className='text-2xl xs:text-lg xs:font-semibold'>
