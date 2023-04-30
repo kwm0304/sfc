@@ -33,8 +33,8 @@ His love of the Lord, a servant’s heart, and an ultra-relational personality l
             </div>
           </div>
       <div className="relative">
-      <div className="col xl:pt-16 xl:ml-40 md:mr-24 lg:mr-20">
-      <div className=' bg-sky-400 pic p-4 w-64 h-24 xs:w-40 md:w-48 md:mr-24  xs:h-16 xs:text-base  xl: xl:mr-6 right-64 rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Allens & Hayes</div>
+      <div className="col xl:pt-16 xl:ml-40 md:mr-24 lg:mr-20 xs:mx-6">
+      <div className=' bg-sky-400 pic p-4 w-64 h-24 xs:w-40 md:w-48 md:mr-24  xs:h-16 xs:text-base  xs:left-6 xl:mr-6 right-64 rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Allens & Hayes</div>
         <img src={lebron} width={500} height={200} className='rounded-lg '/>
       </div>
       </div>
@@ -49,7 +49,7 @@ His love of the Lord, a servant’s heart, and an ultra-relational personality l
           </div>
           
           <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-          <div className='grid grid-col gap-4 xl:grid-cols-2 xl:justify-items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xl:pb-12 xl:mt-24 xs:text-base xs:mx-auto xs:pl-2 xs:gap-0 xs:grid-cols-3 xs:justify-items-between md:pl-20 xl:pl-0 w-screen xl:w-full xl:gap-4 '>
+          <div className='grid grid-col gap-4 xs:ml-12 xs:my-6 xl:grid-cols-2 xl:justify-items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xl:pb-12 xl:mt-24 xs:text-base xs:mx-auto xs:pl-2 xs:gap-0 xs:grid-cols-3 xs:justify-items-between md:pl-20 xl:pl-0 w-screen xl:w-full xl:gap-4 '>
           
           <div className='inline-block  rounded-full h-64 w-64 xl:h-64 xl:w-64 md:h-40 xs:w-32 xs:h-32 md:w-40 md:text-xl s:w-32 xs:flex xs:flex-col xs:p-0 xs:h-32 text-center bg-sky-400 p-2  shadow-xl hover:border hover:border-sky-400 hover:ring-1 hover:ring-sky-400 focus:outline-none focus:ring'>
             <h2 className='pt-8 font-bold text-white xs:pt-3 xl:text-3xl xl:pt-12'>Donated</h2>
