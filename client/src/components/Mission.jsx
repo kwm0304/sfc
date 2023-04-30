@@ -1,7 +1,7 @@
 import  React, { useState } from 'react'
-import distShoes from '../assets/Distributingshoes1.jpg'
-import smilingGirls from '../assets/SmilingGirls.jpg'
-import shoePhoto2 from '../assets/ShoePhoto2.jpg'
+import distShoes from '../assets/distributingshoes1.jpg'
+import smilingGirls from '../assets/smilingGirls.jpg'
+import shoePhoto2 from '../assets/shoePhoto2.jpg'
 
 export default function Mission() {
   const slides = [
