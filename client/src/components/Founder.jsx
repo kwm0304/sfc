@@ -23,7 +23,7 @@ const Founder = () => {
       <hr className='h-px lg:mt-12 lg:mx-44 xl:mt-12 xl:mx-44 bg-sky-600 border-0 xs:mt-12 xs:mx-4 xs:mb-2 xs:mt-4'></hr>
 
       <div className="grid grid-cols-2 xs:grid-cols-1 md:grid-cols-2 place-content-between gap-8">
-      <div className='col text-white  xl:pt-40 place-content-center xs:mr-0 xs:mx-6 xl:ml-12 xs:pt-4'>
+      <div className='col text-white items-center xl:pt-40 place-content-center xs:mr-0 xs:mx-6 xl:ml-12 xs:pt-4'>
             <span className='text-4xl xl:pl-4 text-sky-600 xs:text-3xl xs:pt-3 xs:right-12  xs:mx-2'><i className="fa-solid fa-quote-left float-left pb-4"></i></span>
             <div className='rounded-lg bg-sky-400 p-6 xs:mx-6 xl:ml-12'>
               <p className='text-2xl xs:text-lg xs:font-semibold'>SOLES FOR CHRIST was formed in September of 2022 by Jonathan & Lauren Hayes, and Josiah & Francesca Allen, but the mission itself was going on LONG before that.  
@@ -33,16 +33,16 @@ His love of the Lord, a servant’s heart, and an ultra-relational personality l
             </div>
           </div>
       <div className="relative">
-      <div className="col xl:pt-16 xl:ml-40 md:mr-24 lg:mr-20 xs:mx-6">
-      <div className=' bg-sky-400 pic p-4 w-64 h-24 xs:w-40 md:w-48 md:mr-24  xs:h-16 xs:text-base  xs:left-6 xl:mr-6 right-64 rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Allens & Hayes</div>
+      <div className="col xl:pt-40 xl:ml-40 md:pt-24 md:r-32 lg:mr-20 xs:mx-6">
+      <div className=' bg-sky-400 pic p-4 w-64 h-24 xl:ml-32 xs:w-40 md:w-48 md:mr-24  xs:h-16 xs:text-base  xs:left-6 xl:mr-6  rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Allens & Hayes</div>
         <img src={lebron} width={500} height={200} className='rounded-lg '/>
       </div>
       </div>
       </div>
       <figure className='py-12 grid xl:gap-4 xs:grid xs:grid-cols-1 xs:place-content-center md:align-items-center lg:place-items-center xl:align-items-center'>
-        <div className='grid grid-cols-2  xs:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 xs:mx-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2'>
+        <div className='grid grid-cols-2 items-center xs:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 xs:mx-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2'>
 
-          <div className='col xs:mx-6 xl:mx-0 relative p ml-20 md:pt-20 md:mx-32 lg:mx-8'>
+          <div className='col xs:mx-6  xl:mx-0 relative  ml-20  md:mx-32 lg:mx-8'>
             <div className=" w-full yo xs:justify-center md:ml-14">
             <div className=' bg-sky-400 pic p-4 w-64 h-24 xs:w-40 md:w-48 xs:h-16 xs:text-base  rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Joe McCutcheon</div>
             <img src={joe} width={650} className='rounded-lg md:w-5/6'/>
@@ -70,10 +70,9 @@ His love of the Lord, a servant’s heart, and an ultra-relational personality l
         </ScrollTrigger>
           </div>
 
-          <div className='col text-white xs:mr-8 lg:ml-12 md:mr-24 xs:mr-0 xl:mr-40 mr-24 xs:pt-4'>
-          
-            <div className='rounded-lg bg-sky-400 p-6 xs:mx-6 xl:mx-0 xl:mt-24 lg:mt-0 md:mt-0 lg:mt-0'>
-              <p className='text-2xl xs:text-lg xs:font-semibold'>
+          <div className='col text-white xs:mr-8 lg:ml-12 md:mr-24 xs:mr-0 xl:mr-40 md:pl-8 xl:mr-24 xs:pt-4'>
+            <div className='rounded-lg bg-sky-400 p-6 xs:mx-6 xl:mx-0 xl:mt-24 lg:mt-0  md:mt-0 lg:mt-0'>
+              <p className='text-2xl xs:text-lg xs:font-semibold '>
 Firstly, good footwear is pricey and hard to come by for a lot of children growing up in the impoverished rural areas surrounding San Salvador. Being able to distribute a continuous supply of free footwear to the growing children in these communities would be a huge blessing to them! And secondly, Joe was the late owner of Camerakidz, which does a lot of photography work for local schools. Already having working relationships with the directors of these schools, he asked them for support with collecting shoes from their respective student bodies. Thankfully, many were glad to lend a helping hand. From there, the mission was off and running.<br/><br/>  
 With the help of innumerable people along the way, Joe oversaw and coordinated the collection and shipment of approximately 10,000 pairs of footwear to El Salvador. Along with the shoe mission, Joe would regularly travel to visit Iglesia de Jesucristo Columna de Amor. He always extended an invitation to anyone he encountered to join him on his travels if they were interested. On what would end up being his last visit to El Salvador in December of 2021, Jonathan Hayes and Josiah Allen joined Joe for their first trip there. The experience was so powerful to them both that they decided they wanted to continue to aid Joe any way they could in providing support to the church and people of El Salvador. <br/><br/>
 Unfortunately, in early 2022, Joe McCutcheon developed Covid and passed away on March 1st, 2022. Seeing the need to continue the shoe mission to El Salvador, and sensing a call from the Lord, SOLES FOR CHRIST was formed later that year. Although we can never fully fill the shoes of brother Joe McCutcheon, our desire is to move forward with the same love and commitment of sending new or like new footwear to impoverished women and children in El Salvador through our relationship with the local church body there, Iglesia de Jesucristo Columna de Amor. 

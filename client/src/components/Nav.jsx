@@ -48,7 +48,7 @@ export default function Nav() {
           </section>
           <ul className='DESKTOP-MENU hidden space-x-1 md:flex md:gap-0  md:items-center'>
             <li className='text-white text-2xl font-bold md:text-xl'>
-              <button onClick={() => setModalOpen(true)} className='rounded-lg border-2 border-solid border-white p-2'>
+              <button onClick={() => setModalOpen(true)} className='rounded-lg border-2 border-solid border-white p-2 hover:scale-110'>
                 Donate
               </button>
             </li>
