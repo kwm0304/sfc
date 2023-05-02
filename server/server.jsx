@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 })
 
 //GET config
-app.get("/config", (req, res) => res.send({ publishableKey: process.env.STRIPE_PUBLISHABLE_KEY }))
+app.get("/config", (req, res) => res.send({ publishableKey: `${process.env.STRIPE_PUBLISHABLE_KEY}` }))
   
 //POST payment
 app.post("/payment", createCheckoutSession)
