@@ -3,10 +3,11 @@ import {  useStripe } from '@stripe/react-stripe-js'
 import { fetchFromAPI } from '../helpers'
 
 export default function PaymentForm() {
+  const stripe = useStripe()
   const [amount, setAmount] = useState(0)
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
-  const stripe = useStripe()
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -18,9 +19,7 @@ export default function PaymentForm() {
 
    const { sessionId } = response;
    console.log({sessionId})
-   const { error } = await stripe.redirectToCheckout({
-    sessionId
-   });
+   const { error } = await stripe.redirectToCheckout({ sessionId });
    console.log('response', response)
 
    if (error) {
