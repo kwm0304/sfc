@@ -26,7 +26,7 @@ async function createCheckoutSession(req, res) {
         res.status(200).json({ sessionId: session.id, }) && res.redirect(303, session.url)
         console.log("SID", session.id)
     } catch (error) {
-        res.status(400).json({ error: 'an error occured, unable to create session'})
+        res.status(401).json({ error: 'an error occured, unable to create session'})
     }
 }
 module.exports =  createCheckoutSession 
