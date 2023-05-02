@@ -12,6 +12,7 @@ function StripeContainer({isOpen, onClose}) {
       const { publishableKey } = await r.json();
       console.log('Hello')
       console.log('PK', publishableKey)
+      console.log(typeof publishableKey)
       setStripePromise(loadStripe(publishableKey));
     });
   }, []);
