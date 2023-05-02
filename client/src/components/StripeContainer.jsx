@@ -1,4 +1,4 @@
-import   { useEffect, useState } from 'react'
+import  React, { useEffect, useState } from 'react'
 import Modal from 'react-modal'
 import { Elements } from '@stripe/react-stripe-js'
 import PaymentForm from './PaymentForm'
@@ -8,7 +8,7 @@ function StripeContainer({isOpen, onClose}) {
   const [stripePromise, setStripePromise] = useState(null)
 
   useEffect(() => {
-    fetch("/config").then(async (r) => {
+    fetch("http://localhost:4000/config").then(async (r) => {
       const { publishableKey } = await r.json();
       console.log('Hello')
       console.log('PK', publishableKey)

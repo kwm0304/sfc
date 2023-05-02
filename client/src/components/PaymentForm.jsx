@@ -13,18 +13,17 @@ export default function PaymentForm() {
     
     
    const response = await fetchFromAPI('payment', {
-    body: { line_items: [{ price: amount, quantity: 1}], customer_email: email }
-    
+    body: { line_items: [{ price: amount, quantity: 1}], customer_email: email, amount }
    })
 
    const { sessionId } = response;
    const { error } = await stripe.redirectToCheckout({
-    sessionId
+    sessionId: sessionId
    });
-   console.log(response)
+   console.log('response', response)
 
    if (error) {
-    console.log(error)
+    console.log('error', error)
    }
   }
   //records?
@@ -44,23 +43,23 @@ export default function PaymentForm() {
       <form onSubmit={handleSubmit} id='payment-form'>
               <div className="grid grid-cols-5 pt-10  text-sky-600 font-semibold rounded-xl place-content-center w-3/4 mx-auto px-24 xs:px-0 xs:gap-16">
           <div className='grid grid-cols-1 justify-items-center'>
-            <input type='radio' name='amount' value={amount} onClick={() => setAmount('price_1N20CNDQgz4EcSauRVxxX3dw')} />
+            <input type='radio' name='amount' value={'price_1N20CNDQgz4EcSauRVxxX3dw'} onClick={() => setAmount('price_1N20CNDQgz4EcSauRVxxX3dw')} />
             <label>$50</label>
           </div>
           <div className='grid grid-cols-1 justify-items-center'>
-            <input type='radio' name='amount' value={amount} onClick={() => setAmount('price_1N20EQDQgz4EcSauT2PT3uiA')} />
+            <input type='radio' name='amount' value={'price_1N20EQDQgz4EcSauT2PT3uiA'} onClick={() => setAmount('price_1N20EQDQgz4EcSauT2PT3uiA')} />
             <label>$100</label>
           </div>
           <div className='grid grid-cols-1 justify-items-center'>
-            <input type='radio' name='amount' value={amount} onClick={() => setAmount('price_1N20mADQgz4EcSaurCmD5qXQ')} />
+            <input type='radio' name='amount' value={'price_1N20mADQgz4EcSaurCmD5qXQ'} onClick={() => setAmount('price_1N20mADQgz4EcSaurCmD5qXQ')} />
             <label>$200</label>
           </div>
           <div className='grid grid-cols-1 justify-items-center '>
-            <input type='radio' name='amount'  value={amount} onClick={() => setAmount('price_1N20FvDQgz4EcSauB8MZ33H4')} className='border-2 border-solid border-sky-600'/>
+            <input type='radio' name='amount'  value={'price_1N20FvDQgz4EcSauB8MZ33H4'} onClick={() => setAmount('price_1N20FvDQgz4EcSauB8MZ33H4')} className='border-2 border-solid border-sky-600'/>
             <label>$420</label>
           </div>
           <div className='grid grid-cols-1 justify-items-center '>
-            <input type='radio' name='amount'  value={amount} onClick={() => setAmount('price_1N20H7DQgz4EcSauhloKyAvv')} className='border-2 border-solid border-sky-600'/>
+            <input type='radio' name='amount'  value={'price_1N20H7DQgz4EcSauhloKyAvv'} onClick={() => setAmount('price_1N20H7DQgz4EcSauhloKyAvv')} className='border-2 border-solid border-sky-600'/>
             <label>Other</label>
           </div>
           

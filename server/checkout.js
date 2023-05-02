@@ -2,8 +2,8 @@ const stripeAPI = require('./stripe');
 
 async function createCheckoutSession(req, res) {
     //the web app url will be the business url customers will be redirected to after checkout
-    
     const { line_items, customer_email, amount } = req.body;
+    console.log(req.body)
     //check req body has line items and email
     if(!line_items || !customer_email) {
         return res.status(400).json({ error: 'missing required session parameters' })
@@ -17,6 +17,7 @@ async function createCheckoutSession(req, res) {
             mode: 'payment',
             line_items,
             customer_email, 
+            
             //will be the url the deployed app will be linked to
             success_url: 'https://soles-for-christ.herokuapp.com/',
             cancel_url: 'https://soles-for-christ.herokuapp.com/',
@@ -24,7 +25,6 @@ async function createCheckoutSession(req, res) {
         });
         res.status(200).json({ sessionId: session.id, }) && res.redirect(303, session.url)
     } catch (error) {
-        console.log(error);
         res.status(400).json({ error: 'an error occured, unable to create session'})
     }
 }
