@@ -1,5 +1,5 @@
 const stripeAPI = require('./stripe');
-
+console.log('StripeApI', typeof stripeAPI)
 async function createCheckoutSession(req, res) {
     //the web app url will be the business url customers will be redirected to after checkout
     const { line_items, customer_email } = req.body;
@@ -14,7 +14,7 @@ async function createCheckoutSession(req, res) {
     let session;
 
     try {
-        session = await stripeAPI.checkout.sessions.create({
+        session = await `${stripeAPI}`.checkout.sessions.create({
             payment_method_types: ['card'],
             mode: 'payment',
             line_items,
