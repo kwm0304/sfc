@@ -11,5 +11,4 @@ export async function fetchFromAPI(endpoint, opts) {
     }
   });
   return res.json()
-  
 }
