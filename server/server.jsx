@@ -11,7 +11,7 @@ const app = express()
 
 //middleware
 app.use(express.static("../client"))
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(cors())
 
