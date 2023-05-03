@@ -24,7 +24,7 @@ async function createCheckoutSession(req, res) {
             cancel_url: 'https://soles-for-christ.herokuapp.com',
             submit_type: 'donate'
         });
-        res.status(200).json({ sessionId: data.session.id, }) && res.redirect(303, data.session.url)
+        res.status(200).json({ sessionId: session.id }) && res.redirect(303, session.url)
         console.log("SID", session.id)
    
    
