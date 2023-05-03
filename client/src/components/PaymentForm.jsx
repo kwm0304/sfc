@@ -19,12 +19,15 @@ export default function PaymentForm() {
    const { sessionId } = response;
    console.log(typeof { sessionId })
    console.log({sessionId})
+   if (stripe && sessionId) {
    const { error } = await stripe.redirectToCheckout({ sessionId });
    console.log('response', response)
-
    if (error) {
     console.log('error', error)
    }
+  } else {
+    console.log('Stripe is not initialized or sessionId is missing')
+  }
   }
   //records?
   const first = name.split(" ").shift()
