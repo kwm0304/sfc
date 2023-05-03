@@ -26,7 +26,7 @@ export default function PaymentForm() {
     console.log('error', error)
    }
   } 
-  }
+  
   //records?
   const first = name.split(" ").shift()
   const last = name.split(" ").pop()
