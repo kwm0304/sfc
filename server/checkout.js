@@ -3,7 +3,8 @@ const stripeAPI = require('./stripe');
 async function createCheckoutSession(req, res) {
     //the web app url will be the business url customers will be redirected to after checkout
     const { line_items, customer_email } = req.body;
-    console.log(req.body)
+    console.log('lineItems', { line_items })
+    console.log('customer_email', { customer_email })
     //check req body has line items and email
     if(!line_items || !customer_email) {
         return res.status(400).json({ error: 'missing required session parameters' })
