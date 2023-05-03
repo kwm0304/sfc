@@ -14,7 +14,7 @@ export default function PaymentForm() {
     
     
    const response = await fetchFromAPI('payment', {
-    body: { line_items: [{ price: amount, quantity: 1}], customer_email: email, amount }
+    body: { line_items: [{ price: amount, quantity: 1}], customer_email: email  }
    })
 
    const { sessionId } = response;
