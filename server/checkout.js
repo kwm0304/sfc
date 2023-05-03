@@ -14,7 +14,7 @@ async function createCheckoutSession(req, res) {
     let session;
 
     try {
-        session = await `${stripeAPI}`.checkout.sessions.create({
+        session = await stripeAPI.checkout.sessions.create({
             payment_method_types: ['card'],
             mode: 'payment',
             line_items,
