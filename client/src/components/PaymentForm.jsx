@@ -12,7 +12,6 @@ export default function PaymentForm() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     
-    
    const response = await fetchFromAPI('payment', {
     body: { line_items: [{ price: amount, quantity: 1}], customer_email: email  }
    })

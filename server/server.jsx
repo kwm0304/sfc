@@ -20,14 +20,14 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/dist')));
 }
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/index.html'))
+  res.sendFile(path.join(__dirname, '../client/dist/index.html'))
 })
 
 //GET config
 app.get("/config", (req, res) => res.send({ publishableKey: `${process.env.STRIPE_PUBLISHABLE_KEY}` }))
   
 //POST payment
-app.post("/payment", createCheckoutSession)
+app.post("payment", createCheckoutSession)
 
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, '../client/index.html'));
