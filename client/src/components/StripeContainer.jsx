@@ -10,8 +10,6 @@ function StripeContainer({isOpen, onClose}) {
   useEffect(() => {
     fetch("/config").then(async (r) => {
       const { publishableKey } = await r.json();
-      console.log('Hello')
-      
       console.log(typeof publishableKey)
       setStripePromise(loadStripe(publishableKey));
     });
