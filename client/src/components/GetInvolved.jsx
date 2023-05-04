@@ -43,7 +43,7 @@ export default function GetInvolved() {
           <p className='text-center xs:visible md:invisible lg:invisible xl:invisible'>Last year, 1,600 children were able to get shoes, with a total attendance of more than 2,000 attendees</p> 
         </div>
         </div>
-        <div className='COLUMN flex flex-col gap-4 pr-4 justify-between items-center align-center xs:hidden sm:hidden md:visible lg:visible xl:visible'>
+        <div className='COLUMN flex flex-col gap-4 pr-4 justify-between items-center align-center xs:hidden sm:hidden md:block lg:block xl:block'>
         <div className='rounded-lg items-center xl:h-auto bg-sky-400  text-white xs:text-lg xs:p-4 sm:text-lg md:text-sm md:p-8 lg:text-xl xl:h-24 xl:text-2xl  p-8 w-full'>
            <p className='text-center '>We aim to send 2000+ pairs of shoes every March and December</p> 
         </div>
