@@ -21,7 +21,7 @@ export default function PaymentForm() {
    console.log( {sessionId})
    console.log('response', response)
    
-   const { error } = await stripe.redirectToCheckout(`${ sessionId }`);
+   const { error } = await stripe.redirectToCheckout({ sessionId });
    console.log('response', response)
    if (error) {
     console.log('error', error)
