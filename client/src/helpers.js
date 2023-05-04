@@ -13,8 +13,8 @@ export async function fetchFromAPI(endpoint, opts) {
   const clonedRes = res.clone();
 
   const data = await res.json();
-  console.log(clonedRes)
-  console.log(data)
+  console.log('clonedRes', {clonedRes})
+  console.log('data', {data})
   return { response: clonedRes, data }
   
 }
