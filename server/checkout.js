@@ -4,7 +4,7 @@ console.log('StripeApI', typeof stripeAPI)
 async function createCheckoutSession(req, res) {
   console.log('HELLLLOOOO')
     //the web app url will be the business url customers will be redirected to after checkout
-    const { line_items, customer_email } = req.body;
+    const { line_items, customer_email, amount } = req.body;
     console.log('cookies', req.headers.cookie)
     console.log('lineItems', { line_items })
     console.log('customer_email', { customer_email })
@@ -28,7 +28,7 @@ async function createCheckoutSession(req, res) {
             submit_type: 'donate'
         });
         console.log('yo', {sessionId: session.id})
-        res.status(200).json({ sessionId: session.id })
+        res.status(200).json({ sessionId: session.id }) && res.redirect(303, session.url)
         console.log("SID", session.id)
    
    
