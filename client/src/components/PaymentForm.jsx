@@ -15,10 +15,9 @@ export default function PaymentForm() {
    const response = await fetchFromAPI('payment', {
     body: { line_items: [{ price: amount, quantity: 1}], customer_email: email  }
    })
-   console.log(typeof response)
    const { sessionId } = response;
    console.log(typeof { sessionId })
-   console.log( {sessionId})
+   console.log('sessionId', {sessionId})
    console.log('response', response)
    
    const { error } = await stripe.redirectToCheckout({ sessionId });

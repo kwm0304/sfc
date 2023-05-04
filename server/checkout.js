@@ -2,7 +2,8 @@ const stripeAPI = require('./stripe');
 console.log('StripeApI', typeof stripeAPI)
 
 async function createCheckoutSession(req, res) {
-  console.log('HELLLLOOOO')
+  //doesnt get logged
+  console.log('createCheckout')
     //the web app url will be the business url customers will be redirected to after checkout
     const { line_items, customer_email, amount } = req.body;
     console.log('cookies', req.headers.cookie)
@@ -14,10 +15,10 @@ async function createCheckoutSession(req, res) {
     }
 
     let session;
-    console.log('session', { session })
+    //never logs these but returns 401 error not  400
     try {
       console.log('session', {session})
-      console.log('hello')
+      console.log('try')
         session = await stripeAPI.checkout.sessions.create({
             payment_method_types: ['card'],
             mode: 'payment',
@@ -28,13 +29,10 @@ async function createCheckoutSession(req, res) {
             cancel_url: 'https://soles-for-christ.herokuapp.com',
             submit_type: 'donate'
         });
-        console.log('yo', {sessionId: session.id})
+        console.log('yo', {sessionId: `${session.id}`})
         res.status(200).json({ sessionId: `${session.id}` }) && res.redirect(303, session.url)
-        console.log("SID", session.id)
-   
-   
-
     } catch (error) {
+      console.log('catch')
         res.status(401).json({ error: 'an error occured, unable to create session'})
     }
 }
