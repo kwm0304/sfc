@@ -28,7 +28,7 @@ async function createCheckoutSession(req, res) {
             submit_type: 'donate'
         });
         console.log('yo', {sessionId: session.id})
-        res.status(200).json({ sessionId: session.id }) && redirect(303, session.url)
+        res.status(200).json({ sessionId: session.id })
         console.log("SID", session.id)
    
    
