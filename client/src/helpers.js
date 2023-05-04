@@ -10,7 +10,11 @@ export async function fetchFromAPI(endpoint, opts) {
       'Content-Type': 'application/json'
     }
   });
-  console.log('HELPER', res.json())
-  return res.json()
+  const clonedRes = res.clone();
+
+  const data = await res.json();
+  console.log(clonedRes)
+  console.log(data)
+  return { response: clonedRes, data }
   
 }
