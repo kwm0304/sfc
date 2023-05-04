@@ -5,8 +5,9 @@ async function createCheckoutSession(req, res) {
   //doesnt get logged
   console.log('createCheckout')
     //the web app url will be the business url customers will be redirected to after checkout
-    const { line_items, customer_email, amount } = req.body;
-    console.log('cookies', req.headers.cookie)
+    const { line_items, customer_email
+      , amount } = req.body;
+    console.log('cookies', req.headers)
     console.log('lineItems', { line_items })
     console.log('customer_email', { customer_email })
     //check req body has line items and email

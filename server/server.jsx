@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 app.get("/config", (req, res) => res.send({ publishableKey: `${process.env.STRIPE_PUBLISHABLE_KEY}` }))
   
 //POST payment
-app.post("payment", createCheckoutSession)
+app.post("/payment", createCheckoutSession)
 
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, '../client/index.html'));
