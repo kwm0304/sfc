@@ -45,7 +45,7 @@ export default function Mission() {
     <hr className='h-px lg:mt-12 lg:mx-44 xl:mt-20 xl:mb-12 xl:mx-44 mt-12 mx-44 bg-white border-0 xs:mt-12 xs:mx-0 xs:mb-2 xs:mt-12'></hr>
       <h2 className='text-4xl text-white text-center font-bold'>THE MISSION</h2>
       <hr className='h-px lg:mt-12 lg:mx-44 xl:mt-12 xl:mx-44 bg-white border-0 xs:mt-12 xs:mx-4 xs:mb-2 xs:mt-4'></hr>
-    <div className='max-w-[1400px] xl:h-[780px] lg:h-[700px] h-[780px] xs:h-[390px] md:h-[700px] w-full xl:justify-center xl:place-content-center xl:px-auto xl:mx-auto py-12 relative group '>
+    <div className='max-w-[1400px] xl:h-[1200px] lg:h-[700px] h-[780px] xs:h-[390px] md:h-[700px] w-full xl:justify-center xl:place-content-center xl:px-auto xl:mx-auto py-12 relative group '>
       <img 
       src={`${slides[currentIndex].url}`}      
       className="w-full h-full rounded-2xl bg-center bg-cover duration-500 ">

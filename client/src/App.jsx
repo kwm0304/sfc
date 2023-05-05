@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 //dependencies
 import Modal from 'react-modal'
 
+
 Modal.setAppElement('#root')
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
      <Founder />
      <Mission   />
      <GetInvolved />
+     
      <Footer />
     </>
   )

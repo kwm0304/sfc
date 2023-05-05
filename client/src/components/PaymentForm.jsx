@@ -42,29 +42,34 @@ export default function PaymentForm() {
     <>
   
       <form onSubmit={handleSubmit} id='payment-form'>
-              <div className="grid grid-cols-5 pt-10  text-sky-600 font-semibold rounded-xl place-content-center w-3/4 mx-auto px-24 xs:px-0 xs:gap-16">
+              <div className="grid grid-cols-6 pt-10  text-sky-600 font-semibold rounded-xl place-content-center w-3/4 mx-auto px-24 xs:px-0 xs:gap-16">
           <div className='grid grid-cols-1 justify-items-center'>
-            <input type='radio' name='amount' value={'price_1N20CNDQgz4EcSauRVxxX3dw'} onClick={() => setAmount('price_1N20CNDQgz4EcSauRVxxX3dw')} />
+            <input type='radio' name='amount' value={'price_1N20CNDQgz4EcSauRVxxX3dw'} onClick={() => setAmount('price_1N4UnMFmz5447qTkIea1qr9F')} />
+            <label>$20</label>
+            
+          </div>
+          <div className='grid grid-cols-1 justify-items-center'>
+            <input type='radio' name='amount' value={'price_1N20CNDQgz4EcSauRVxxX3dw'} onClick={() => setAmount('price_1N4UnyFmz5447qTkIacw0w9J')} />
             <label>$50</label>
-            <p className='text-sky-400 italic'>25 Pairs</p>
+            
           </div>
           <div className='grid grid-cols-1 justify-items-center'>
-            <input type='radio' name='amount' value={'price_1N20EQDQgz4EcSauT2PT3uiA'} onClick={() => setAmount('price_1N20EQDQgz4EcSauT2PT3uiA')} />
+            <input type='radio' name='amount' value={'price_1N20EQDQgz4EcSauT2PT3uiA'} onClick={() => setAmount('price_1N4UoMFmz5447qTkkPy2XXtZ')} />
             <label>$100</label>
-            <p className='text-sky-400 italic'>50 Pairs</p>
+            
           </div>
           <div className='grid grid-cols-1 justify-items-center'>
-            <input type='radio' name='amount' value={'price_1N20mADQgz4EcSaurCmD5qXQ'} onClick={() => setAmount('price_1N20mADQgz4EcSaurCmD5qXQ')} />
+            <input type='radio' name='amount' value={'price_1N20mADQgz4EcSaurCmD5qXQ'} onClick={() => setAmount('price_1N4UosFmz5447qTkesn3WLKh')} />
             <label>$200</label>
-            <p className='text-sky-400 italic'>100 Pairs</p>
+            
           </div>
           <div className='grid grid-cols-1 justify-items-center '>
-            <input type='radio' name='amount'  value={'price_1N20FvDQgz4EcSauB8MZ33H4'} onClick={() => setAmount('price_1N20FvDQgz4EcSauB8MZ33H4')} className='border-2 border-solid border-sky-600'/>
+            <input type='radio' name='amount'  value={'price_1N20FvDQgz4EcSauB8MZ33H4'} onClick={() => setAmount('price_1N4UpVFmz5447qTkU3c9WulB')} className='border-2 border-solid border-sky-600'/>
             <label>$420</label>
             <p className='text-sky-400 italic'>Whole Container</p>
           </div>
           <div className='grid grid-cols-1 justify-items-center '>
-            <input type='radio' name='amount'  value={'price_1N20H7DQgz4EcSauhloKyAvv'} onClick={() => setAmount('price_1N20H7DQgz4EcSauhloKyAvv')} className='border-2 border-solid border-sky-600'/>
+            <input type='radio' name='amount'  value={'price_1N20H7DQgz4EcSauhloKyAvv'} onClick={() => setAmount('price_1N4Uq9Fmz5447qTk7TCZfP9u')} className='border-2 border-solid border-sky-600'/>
             <label>Other</label>
           </div>
           
