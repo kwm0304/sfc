@@ -33,7 +33,7 @@ async function createCheckoutSession(req, res) {
         console.log('yo', {sessionId: `${session.id}`})
         res.status(200).json({ sessionId: session.id }) && res.redirect(303, session.url)
     } catch (error) {
-      console.log('catch')
+      console.log('error', error)
         res.status(401).json({ error: 'an error occured, unable to create session'})
     }
 }
