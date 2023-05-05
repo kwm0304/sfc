@@ -5,15 +5,9 @@ async function createCheckoutSession(req, res) {
   //doesnt get logged
   console.log("createCheckout");
   //the web app url will be the business url customers will be redirected to after checkout
-  const { line_items, customer_email, amount } = req.body;
-  function getCookies (){
-     const dirty = (req.headers.cookie).split(' ').pop();
-     return dirty.split('=').pop() 
-  }
-  console.log('headers', getCookies())
-  console.log("cookies", ((req.headers.cookie)).split(' ').pop());
-  console.log("lineItems", { line_items });
-  console.log("customer_email", { customer_email });
+  const { line_items, customer_email } = req.body;
+  
+  
   //check req body has line items and email
   if (!line_items || !customer_email) {
     return res
@@ -24,8 +18,6 @@ async function createCheckoutSession(req, res) {
   let session;
   //never logs these but returns 401 error not  400
   try {
-    console.log("session", { session });
-    console.log("try");
     session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
@@ -36,7 +28,7 @@ async function createCheckoutSession(req, res) {
       cancel_url: "https://soles-for-christ.herokuapp.com/canceled",
       submit_type: "donate",
     });
-    console.log("yo", { sessionId: session.id });
+    
     res.status(200).json({sessionId: session.id}) 
   } catch (error) {
     console.log("error", error);

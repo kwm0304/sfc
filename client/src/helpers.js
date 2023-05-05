@@ -9,8 +9,7 @@ export async function fetchFromAPI(endpoint, opts) {
       'Content-Type': 'application/json', 
     }
   });
-  console.log('fetchFromAPI', res.json())
   const data = await res.json();
-  console.log('data', {data})
+  
   return data;
 }
