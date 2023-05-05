@@ -24,8 +24,8 @@ async function createCheckoutSession(req, res) {
       line_items,
       customer_email,
       //will be the url the deployed app will be linked to
-      success_url: "https://soles-for-christ.herokuapp.com/success?session_id={CHECKOUT_SESSION_ID}",
-      cancel_url: "https://soles-for-christ.herokuapp.com/canceled",
+      success_url: "https://soles-for-christ.herokuapp.com/",
+      cancel_url: "https://soles-for-christ.herokuapp.com/",
       submit_type: "donate",
     });
     
