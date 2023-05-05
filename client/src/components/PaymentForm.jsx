@@ -7,7 +7,6 @@ export default function PaymentForm() {
   const [amount, setAmount] = useState(0)
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
-  const [sessionId, setSessionId] = useState(null)
   
 
   const handleSubmit = async (e) => {

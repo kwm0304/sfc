@@ -10,5 +10,6 @@ export async function fetchFromAPI(endpoint, opts) {
     }
   });
   console.log('fetchFromAPI', res.json())
-  return res.json()
+  const data = await res.json();
+  return data;
 }
