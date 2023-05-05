@@ -1,6 +1,5 @@
 const stripeAPI = require("./stripe");
-const stripe =require('stripe')(process.env.STRIPE_SECRET_KEY)
-console.log("StripeApI", typeof stripeAPI);
+const stripe =require('stripe')(`${process.env.STRIPE_SECRET_KEY}`)
 
 async function createCheckoutSession(req, res) {
   //doesnt get logged
