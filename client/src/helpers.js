@@ -1,7 +1,7 @@
 export async function fetchFromAPI(endpoint, opts) {
   const { method, body } = { method: "POST", body: null, ...opts};
 
-  const res = await fetch(`https://soles-for-christ.herokuapp.com/${endpoint}`, {
+  const res = await fetch(`http://localhost:4000/${endpoint}`, {
     method,
     ...(body && { body: JSON.stringify(body) }),
     headers: {
@@ -9,5 +9,4 @@ export async function fetchFromAPI(endpoint, opts) {
     }
   });
   return res.json()
-  
 }

@@ -29,9 +29,9 @@ app.get("/config", (req, res) => res.send({ publishableKey: `${process.env.STRIP
 //POST payment
 app.post("/payment", createCheckoutSession)
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../client/index.html'));
-// });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/index.html'));
+});
 
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`)
