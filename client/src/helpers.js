@@ -5,7 +5,8 @@ export async function fetchFromAPI(endpoint, opts) {
     method,
     ...(body && { body: JSON.stringify(body) }),
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer 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'
     }
   });
   return res.json()
