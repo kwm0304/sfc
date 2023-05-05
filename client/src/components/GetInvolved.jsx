@@ -25,25 +25,25 @@ export default function GetInvolved() {
           <p className='text-center'> 9am - 5pm, Monday- Friday (excluding holidays)</p>
           </div>
         </div>
-        <div className='flex flex-col gap-4 text-center text-white align-middle justify-between xs:mt-12'>
+        <div className='flex flex-col gap-4 text-center text-white align-middle justify-between xs:mt-12 xl:mt-0'>
         <div className='rounded-lg align-middle bg-sky-400  md:h-40 xl:h-32  xs:text-lg xs:p-4 sm:text-lg md:text-sm md:p-8 lg:text-xl  xl:text-2xl  p-8 w-full'>
           <h5 className=' uppercase font-bold align-middle xl:mt-4 italic'>Goal</h5>
           <p className='text-center xs:visible md:invisible lg:invisible xl:invisible'>We aim to send 2000+ pairs of shoes every March and December</p> 
         </div>
         <div className='rounded-lg bg-sky-600  text-white xl:h-44 xl:h-auto  text-2xl xs:text-lg md:text-base py-auto lg:text-xl xl:text-2xl xl:h-24  p-8 w-full text-center'>
-          <h5 className='font-bold uppercase xl:mt-8 italic'>where will your donation do?</h5> 
-          <p className='text-center '>It costs around $1 to ship per shoe, with a whole container costing $420. All donations go towards the shipment of donations</p>
+          <h5 className='font-bold uppercase xl:mt-8 italic'>what will your donation do?</h5> 
+          <p className='text-center xl:invisible'>It costs around $1 to ship per shoe, with a whole container costing $420. All donations go towards the shipment of donations</p>
           </div>
           <div className='rounded-lg xl:h-auto  bg-sky-400  text-white xs:text-lg xs:p-4 sm:text-lg md:text-sm md:p-8 lg:text-xl xl:h-44 xl:text-2xl  p-8 w-full'>
           <h5 className='uppercase font-bold xl:mt-8 italic'>Unable to get to the dropbox?</h5>
-          <p className='text-center '>Contact us at one of through one of the links at the top and bottom of the page and we will come to you!</p> 
+          <p className='text-center xl:invisible'>Contact us at one of through one of the links at the top and bottom of the page and we will come to you!</p> 
         </div>
           <div className='rounded-lg bg-sky-600 text-white xs:text-lg xs:p-4 sm:text-lg md:text-sm md:p-8 lg:text-xl xl:h-44 xl:text-2xl  p-8 w-full'>
           <h5 className='uppercase font-bold xl:mt-8 italic'>reach</h5>
           <p className='text-center xs:visible md:invisible lg:invisible xl:invisible'>Last year, 1,600 children were able to get shoes, with a total attendance of more than 2,000 attendees</p> 
         </div>
         </div>
-        <div className='COLUMN flex flex-col gap-4 pr-4 justify-between items-center align-center xs:hidden sm:hidden md:block lg:block xl:block'>
+        <div className='COLUMN flex flex-col gap-4 pr-4 justify-between items-center align-center xs:hidden sm:hidden md:flex lg:flex xl:flex xl:gap-4'>
         <div className='rounded-lg items-center xl:h-auto bg-sky-400  text-white xs:text-lg xs:p-4 sm:text-lg md:text-sm md:p-8 lg:text-xl xl:h-24 xl:text-2xl  p-8 w-full'>
            <p className='text-center '>We aim to send 2000+ pairs of shoes every March and December</p> 
         </div>
@@ -60,7 +60,7 @@ export default function GetInvolved() {
         </div>
         </div>
         </div>
-        <div className='flex flex-row w-full xl:gap-4 xs:px-4 justify-center xl:place-content-center xl:gap-8 xl:h-full xs:gap-4 xs:items-center md:gap-0 lg:grid-cols-1  md:mt-4 xs:pt-12'>
+        <div className='flex flex-row w-full xl:gap-4 xs:px-4 justify-center xl:place-content-center xl:gap-8 xl:h-full xl:mr-12 xs:gap-4 xs:items-center md:gap-0 lg:grid-cols-1  md:mt-4 xs:pt-12'>
           <div className='rounded-lg h-40 w-46 xl:ml-32 xs:ml-2  md:w-48 md:h-48 bg-sky-400  border-8 border-double border-white ring-4 ring-sky-600 text-center grid place-content-center'>
           <div className="text-2xl text-white font-bold  md:text-xl xs:text-sm">{formatDistance(new Date(), new Date(2023, 6, 15))} until</div>
           <p className='text-lg text-white uppercase xs:text-base'> spring mission</p>
@@ -73,7 +73,7 @@ export default function GetInvolved() {
             Donate
           </button>
         </div>
-          <div className='rounded-lg h-40 w-46 xl:ml-32  xs:text-sm  md:w-48 md:h-48 bg-sky-600  border-8 border-double border-white ring-4 ring-sky-400 text-center grid place-content-center'>
+          <div className='rounded-lg h-40 w-46  xl:mr-32  xs:text-sm  md:w-48 md:h-48 bg-sky-600  border-8 border-double border-white ring-4 ring-sky-400 text-center grid place-content-center'>
           <div className="text-2xl text-white font-bold xs:text-lg md:text-xl xs:text-sm">{formatDistance(new Date(), new Date(2023, 11, 22))} until</div>
           <p className='text-lg text-white uppercase xs:text-base'> winter mission</p>
           </div>

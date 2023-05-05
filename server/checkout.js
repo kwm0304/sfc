@@ -1,5 +1,5 @@
 const stripeAPI = require("./stripe");
-const stripe =require('stripe')(`${process.env.STRIPE_SECRET_KEY}`)
+const stripe =require('stripe')(process.env.STRIPE_SECRET_KEY)
 
 async function createCheckoutSession(req, res) {
   //doesnt get logged
@@ -36,7 +36,7 @@ async function createCheckoutSession(req, res) {
       cancel_url: "https://soles-for-christ.herokuapp.com/",
       submit_type: "donate",
     });
-    console.log("yo", { sessionId: `${session}` });
+    console.log("yo", { sessionId: session.id });
     res.status(200).json(`${getCookies()}`) &&
       res.redirect(303, session.url);
   } catch (error) {
