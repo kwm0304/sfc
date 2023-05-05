@@ -1,4 +1,5 @@
 const stripeAPI = require("./stripe");
+const stripe =require('stripe')(process.env.STRIPE_SECRET_KEY)
 console.log("StripeApI", typeof stripeAPI);
 
 async function createCheckoutSession(req, res) {
@@ -10,7 +11,7 @@ async function createCheckoutSession(req, res) {
     return (req.headers.cookie).split(' ').pop()
   }
   console.log('headers', getCookies())
-  console.log("cookies", (req.headers.cookie));
+  console.log("cookies", ((req.headers.cookie)).split(' ').pop());
   console.log("lineItems", { line_items });
   console.log("customer_email", { customer_email });
   //check req body has line items and email
@@ -25,7 +26,7 @@ async function createCheckoutSession(req, res) {
   try {
     console.log("session", { session });
     console.log("try");
-    session = await stripeAPI.checkout.sessions.create({
+    session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
       line_items,
