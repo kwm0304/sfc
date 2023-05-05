@@ -11,5 +11,6 @@ export async function fetchFromAPI(endpoint, opts) {
   });
   console.log('fetchFromAPI', res.json())
   const data = await res.json();
+  console.log('data', {data})
   return data;
 }
