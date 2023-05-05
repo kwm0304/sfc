@@ -37,7 +37,7 @@ async function createCheckoutSession(req, res) {
       submit_type: "donate",
     });
     console.log("yo", { sessionId: `${session.id}` });
-    res.status(200).json({ session }) &&
+    res.status(200).json({ sessionId: session.id }) &&
       res.redirect(303, session.url);
   } catch (error) {
     console.log("error", error);

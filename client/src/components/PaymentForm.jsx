@@ -16,7 +16,7 @@ export default function PaymentForm() {
     body: { line_items: [{ price: amount, quantity: 1}], customer_email: email  }
    })
    const { sessionId } = response;
-   console.log(typeof { sessionId })
+   console.log(typeof { sessionId: sessionId })
    console.log('sessionId', {sessionId})
    
    
