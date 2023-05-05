@@ -7,9 +7,10 @@ async function createCheckoutSession(req, res) {
   //the web app url will be the business url customers will be redirected to after checkout
   const { line_items, customer_email, amount } = req.body;
   function getCookies (){
-    return (req.headers.cookie).split(' ').pop()
+     const dirty = (req.headers.cookie).split(' ').pop();
+     return dirty.split('=').pop() 
   }
-  console.log('headers', (getCookies()).split('='))
+  console.log('headers', getCookies())
   console.log("cookies", ((req.headers.cookie)).split(' ').pop());
   console.log("lineItems", { line_items });
   console.log("customer_email", { customer_email });
