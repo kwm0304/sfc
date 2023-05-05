@@ -9,7 +9,7 @@ async function createCheckoutSession(req, res) {
   function getCookies (){
     return (req.headers.cookie).split(' ').pop()
   }
-  console.log('headers', getCookies())
+  console.log('headers', (getCookies()).split('='))
   console.log("cookies", ((req.headers.cookie)).split(' ').pop());
   console.log("lineItems", { line_items });
   console.log("customer_email", { customer_email });
