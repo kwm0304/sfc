@@ -1,7 +1,7 @@
 import { useState } from 'react'
 //assets
 import joe from '../assets/Joe.jpg'
-import lebron from '../assets/lebron.jpg'
+import allens from '../assets/allens.jpg'
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger'
 import StripeContainer from './StripeContainer';
@@ -46,7 +46,7 @@ const Founder = () => {
           <div className='col xs:mx-6  xl:mx-0 relative  ml-20  md:mx-32 lg:mx-8'>
             <div className=" w-full yo xs:justify-center md:ml-14">
             <div className=' bg-sky-400 pic p-4 w-64 h-24 xs:w-40 md:w-48 xs:h-16 xs:text-base  rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Allens & Hayes </div>
-            <img src={lebron} width={400} className='rounded-lg md:w-5/6'/>
+            <img src={allens} width={400} className='rounded-lg md:w-5/6'/>
           </div>
           
           <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
