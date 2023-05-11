@@ -53,7 +53,7 @@ const Founder = () => {
           <div className='flex flex-col align-content-center items-center align-center gap-4 my-auto  content-center  xs:my-6 xl:grid-cols-1 xl:justify-items-center  py-8 px-2 xs:text-base xs:mx-auto xs:pl-2 xs:gap-0  xs:justify-items-center md:pl-20 xl:ml-14 xl:mr-28 '>
           
           <div className='inline-block  rounded-lg  w-1/2  md:mr-8 md:text-xl  xs:flex xs:flex-col xs:p-0 border-4 border-dashed border-sky-600 text-center bg-sky-300 p-2  shadow-xl hover:border hover:border-sky-400 hover:ring-1 hover:ring-sky-400 focus:outline-none focus:ring'>
-            <h2 className='pt-8 font-bold text-white xs:pt-3 xl:text-3xl xl:pt-12 xl:pb-6 '>Shipped</h2>
+            <h2 className='pt-8 font-bold text-white xs:pt-3 xl:text-3xl xl:pt-12 xl:pb-6'>Shipped</h2>
             <span className='inline-block rounded-full text-sky-600 text-4xl xl:text-6xl  p-3  xs:m-0 xs:py-0 '>
             <i className="fa-solid fa-box-open text-center pt-2 md:text-md md:p-0 xs:pt-0 " />
             </span>

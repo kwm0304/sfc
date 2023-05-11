@@ -6,7 +6,8 @@ export default function PaymentForm() {
   const stripe = useStripe()
   const [amount, setAmount] = useState(0)
   const [email, setEmail] = useState('')
-  const [name, setName] = useState('')
+  const [first, setFirst] = useState('')
+  const [last, setLast] = useState('')
   
 
   const handleSubmit = async (e) => {
@@ -28,15 +29,13 @@ export default function PaymentForm() {
   } 
   
   //records?
-  const first = name.split(" ").shift()
-  const last = name.split(" ").pop()
+ 
   
   //frog on a log
   console.log("amount", amount)
   console.log("email", email)
   console.log("name", name)
-  console.log('first', first)
-  console.log('last', last)
+  
   
   return (
     <>
@@ -63,8 +62,8 @@ export default function PaymentForm() {
             <label>$200</label>
             
           </div>
-          <div className='grid grid-cols-1 justify-items-center '>
-            <input type='radio' name='amount'  value={'price_1N20FvDQgz4EcSauB8MZ33H4'} onClick={() => setAmount('price_1N4UpVFmz5447qTkU3c9WulB')} className='border-2 border-solid border-sky-600'/>
+          <div className='grid grid-cols-1 pt-2 items-start text-center '>
+            <input type='radio' name='amount'  value={'price_1N20FvDQgz4EcSauB8MZ33H4'} onClick={() => setAmount('price_1N4UpVFmz5447qTkU3c9WulB')} className='mt-4 border-2 border-solid border-sky-600 mb-8'/>
             <label>$420</label>
             <p className='text-sky-400 italic'>Whole Container</p>
           </div>
@@ -76,10 +75,16 @@ export default function PaymentForm() {
           
         </div>
         <div className="flex xs:grid xs:grid-cols-1 xs:mt-12">
+        <div className="grid grid-cols-2 justify-items-center">
         <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
-          <input type='text' value={name} onChange={(e) => setName(e.target.value)} placeholder='First Last' className='border-4 border-solid border-sky-600 rounded-full text-center w-72 h-10 active:border-2 active:border-solid active:border-sky-600'/>
+          <input type='text' value={first} onChange={(e) => setFirst(e.target.value)} placeholder='First' className='border-4 border-solid border-sky-600 rounded-full text-center w-72 h-10 active:border-2 active:border-solid active:border-sky-600'/>
           <label className='text-xl text-sky-600 font-semibold text-center py-2'>Name</label>
         </div>
+        <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
+          <input type='text' value={last} onChange={(e) => setLast(e.target.value)} placeholder='Last' className='border-4 border-solid border-sky-600 rounded-full text-center w-72 h-10 active:border-2 active:border-solid active:border-sky-600'/>
+          <label className='text-xl text-sky-600 font-semibold text-center py-2'>Last</label>
+        </div>
+        </div>  
         <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
           <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='email@email.com' className='border-4 border-solid border-sky-600 rounded-full text-center w-72 h-10 active:border-2 active:border-solid active:border-sky-600'/>
           <label className='text-xl text-sky-600 font-semibold text-center py-2'>Email</label>
