@@ -78,11 +78,11 @@ export default function PaymentForm() {
         <div className="grid grid-cols-2 justify-items-center xs:grid xs:grid-cols-1">
         <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
           <input type='text' value={first} onChange={(e) => setFirst(e.target.value)} placeholder='First' className='border-4 border-solid border-sky-600 rounded-full text-center w-72 h-10 active:border-2 active:border-solid active:border-sky-600'/>
-          <label className='text-xl text-sky-600 font-semibold text-center py-2'>First</label>
+          <label className='text-xl text-sky-600 font-semibold text-center py-2'>First Name</label>
         </div>
         <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
           <input type='text' value={last} onChange={(e) => setLast(e.target.value)} placeholder='Last' className='border-4 border-solid border-sky-600 rounded-full text-center w-72 h-10 active:border-2 active:border-solid active:border-sky-600'/>
-          <label className='text-xl text-sky-600 font-semibold text-center py-2'>Last</label>
+          <label className='text-xl text-sky-600 font-semibold text-center py-2'>Last Name</label>
         </div>
         </div>  
         <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
