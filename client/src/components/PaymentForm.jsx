@@ -73,13 +73,16 @@ export default function PaymentForm() {
           <label className='text-xl text-sky-600 font-semibold text-center py-2'>Last Name</label>
         </div>
         </div>  
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 justify-items-center xs:grid xs:grid-cols-1">
+
         <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
           <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='email@email.com' className='border-4 border-solid border-sky-600 rounded-full text-center w-72 h-10 active:border-2 active:border-solid active:border-sky-600'/>
           <label className='text-xl text-sky-600 font-semibold text-center py-2'>Email</label>
         </div>
         <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
           <input type='text' value={address} onChange={(e) => setAddress(e.target.value)} placeholder='1234 5th St.' className='border-4 border-solid border-sky-600 rounded-full text-center w-72 h-10 active:border-2 active:border-solid active:border-sky-600'/>
-          <label className='text-xl text-sky-600 font-semibold text-center py-2'>Email</label>
+          <label className='text-xl text-sky-600 font-semibold text-center py-2'>Address</label>
+        </div>
         </div>
         </div>
         <div className="flex justify-center py-12">
