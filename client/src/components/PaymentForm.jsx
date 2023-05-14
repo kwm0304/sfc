@@ -61,7 +61,7 @@ export default function PaymentForm() {
         </div>
         <p className='text-sky-600 text-center'>* Highest amount is entire shipping container price</p>
         <div className="flex xs:grid xs:grid-cols-1 xs:mt-12">
-        <div className="grid grid-cols-2 justify-items-center xs:grid xs:grid-cols-1">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 justify-items-center xs:grid xs:grid-cols-1">
         <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
           <input type='text' value={first} onChange={(e) => setFirst(e.target.value)} placeholder='First' className='border-4 border-solid border-sky-600 rounded-full text-center w-72 h-10 active:border-2 active:border-solid active:border-sky-600'/>
           <label className='text-xl text-sky-600 font-semibold text-center py-2'>First Name</label>
