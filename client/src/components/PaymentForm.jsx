@@ -66,8 +66,8 @@ export default function PaymentForm() {
             <input type='radio' name='amount'  value={'price_1N20H7DQgz4EcSauhloKyAvv'} onClick={() => setAmount('price_1N4Uq9Fmz5447qTk7TCZfP9u')} className='border-2 border-solid border-sky-600'/>
             <label>Other</label>
           </div>
-          <p className='text-sky-600 text-center'>* Highest amount is entire shipping container price</p>
         </div>
+        <p className='text-sky-600 text-center'>* Highest amount is entire shipping container price</p>
         <div className="flex xs:grid xs:grid-cols-1 xs:mt-12">
         <div className="grid grid-cols-2 justify-items-center xs:grid xs:grid-cols-1">
         <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
