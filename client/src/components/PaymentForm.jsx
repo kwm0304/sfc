@@ -18,7 +18,7 @@ export default function PaymentForm() {
     const streetAddress = address;
     
    const response = await fetchFromAPI('payment', {
-    body: { line_items: [{ price: amount, quantity: 1}], customer_email: email, customer_first_name: firstName, customer_last_name: lastName }
+    body: { line_items: [{ price: amount, quantity: 1}], customer_email: email, customer_first_name: firstName, customer_last_name: lastName, billing_address_colection: streetAddress  }
    })
    const { sessionId } = response;
    
