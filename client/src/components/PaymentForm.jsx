@@ -66,7 +66,6 @@ export default function PaymentForm() {
           <div className='grid grid-cols-1 justify-items-center '>
             <input type='radio' name='amount'  value={'price_1N20FvDQgz4EcSauB8MZ33H4'} onClick={() => setAmount('price_1N4UpVFmz5447qTkU3c9WulB')} className='border-2 border-solid border-sky-600'/>
             <label>$420</label>
-            <p className='text-sky-400 italic'>Whole Container</p>
           </div>
           <div className='grid grid-cols-1 justify-items-center '>
             <input type='radio' name='amount'  value={'price_1N20H7DQgz4EcSauhloKyAvv'} onClick={() => setAmount('price_1N4Uq9Fmz5447qTk7TCZfP9u')} className='border-2 border-solid border-sky-600'/>
