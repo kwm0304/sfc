@@ -8,15 +8,17 @@ export default function PaymentForm() {
   const [email, setEmail] = useState('')
   const [first, setFirst] = useState('')
   const [last, setLast] = useState('')
+  const [address, setAddress] = useState('')
   
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     const firstName = first;
     const lastName = last;
+    const streetAddress = address;
     
    const response = await fetchFromAPI('payment', {
-    body: { line_items: [{ price: amount, quantity: 1}], customer_email: email, customer_first_name: firstName, customer_last_name: lastName  }
+    body: { line_items: [{ price: amount, quantity: 1}], customer_email: email, customer_first_name: firstName, customer_last_name: lastName, address: streetAddress  }
    })
    const { sessionId } = response;
    
@@ -73,6 +75,10 @@ export default function PaymentForm() {
         </div>  
         <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
           <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='email@email.com' className='border-4 border-solid border-sky-600 rounded-full text-center w-72 h-10 active:border-2 active:border-solid active:border-sky-600'/>
+          <label className='text-xl text-sky-600 font-semibold text-center py-2'>Email</label>
+        </div>
+        <div className='grid grid-cols-1 text-center mx-auto rounded-xl justify-items-center  '>
+          <input type='text' value={address} onChange={(e) => setAddress(e.target.value)} placeholder='1234 5th St.' className='border-4 border-solid border-sky-600 rounded-full text-center w-72 h-10 active:border-2 active:border-solid active:border-sky-600'/>
           <label className='text-xl text-sky-600 font-semibold text-center py-2'>Email</label>
         </div>
         </div>
