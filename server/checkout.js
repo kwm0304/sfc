@@ -27,7 +27,7 @@ async function createCheckoutSession(req, res) {
         customer_first_name,
         customer_last_name
       },
-      billing_address_collection,
+      billing_address_collection: "required",
       //will be the url the deployed app will be linked to
       success_url: "https://soles-for-christ.herokuapp.com/",
       cancel_url: "https://soles-for-christ.herokuapp.com/",
