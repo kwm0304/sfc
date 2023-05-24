@@ -14,7 +14,7 @@ export default function GetInvolved() {
         <div className='COLUMN flex flex-col gap-4  justify-items-center w-full'>
         <div className='rounded-lg xl:h-auto border-8 border-solid  border-sky-600 text-sky-600 xs:text-lg xs:p-4 sm:text-lg md:text-sm md:p-8 lg:text-xl xl:h-24 xl:text-2xl  p-8 w-full'>
           <h5 className='text-center uppercase font-bold'>Drop off location</h5>
-           <p className='text-center'>732 Kannapolis Parkway, Concord, NC 28081 (Office of Allen and Ballard Insurance)</p> 
+           <p className='text-center'>732 Kannapolis Parkway, Concord, NC 28027 (Office of Allen and Ballard Insurance)</p> 
         </div>
         <div className='google-map  xs:grid xs:grid-cols-1 xs:justify-items-center xs:left-0 xs:p-0 xs:ml-0 md:ml-32 xl:mx-auto xl:w-5/6 my-auto'>
         <iframe className='w-full xs:left-8 xs:ml-0 xs:pl-0 xs:scale-75 md:scale-75 lg:scale-75 xl:scale-100' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.2113251833807!2d-80.68036822359117!3d35.42479474401709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8854045545fe0e1d%3A0x4f21e1941dda756e!2s732%20Kannapolis%20Pkwy%2C%20Concord%2C%20NC%2028027!5e0!3m2!1sen!2sus!4v1682811538285!5m2!1sen!2sus" width="500" height="375" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
@@ -28,11 +28,11 @@ export default function GetInvolved() {
         <div className='flex flex-col gap-4 text-center text-white align-middle justify-between xs:mt-12 xl:mt-0'>
         <div className='rounded-lg align-middle bg-sky-400  md:h-40 xl:h-32  xs:text-lg xs:p-4 sm:text-lg md:text-sm md:p-8 lg:text-xl  xl:text-2xl  p-8 w-full'>
           <h5 className=' uppercase font-bold align-middle xl:mt-4 italic'>Goal</h5>
-          <p className='text-center xs:visible md:invisible lg:invisible xl:invisible'>We aim to send 2000+ pairs of shoes every March and December</p> 
+          <p className='text-center xs:visible md:invisible lg:invisible xl:invisible'>We aim to send 2000+ pairs of shoes every March and August</p> 
         </div>
         <div className='rounded-lg bg-sky-600  text-white xl:h-44 xl:h-auto  text-2xl xs:text-lg md:text-base py-auto lg:text-xl xl:text-2xl xl:h-24  p-8 w-full text-center'>
           <h5 className='font-bold uppercase xl:mt-8 italic'>what will your donation do?</h5> 
-          <p className='text-center xl:invisible'>It costs around $1 to ship per pair of shoes, with a whole container costing $420. All donations go towards the shipment of donations</p>
+          <p className='text-center xl:invisible'>Current shipping costs equates to approximately $1 per pair of footwear, with each container costing $420. Your generous monetary donation will assist with covering these shipping charges</p>
           </div>
           <div className='rounded-lg xl:h-auto  bg-sky-400  text-white xs:text-lg xs:p-4 sm:text-lg md:text-sm md:p-8 lg:text-xl xl:h-44 xl:text-2xl  p-8 w-full'>
           <h5 className='uppercase font-bold xl:mt-8 italic'>Unable to get to the dropbox?</h5>
@@ -45,10 +45,10 @@ export default function GetInvolved() {
         </div>
         <div className='COLUMN flex flex-col gap-4 pr-4 justify-between items-center align-center xs:hidden sm:hidden md:flex lg:flex xl:flex xl:gap-4'>
         <div className='rounded-lg items-center xl:h-auto bg-sky-400  text-white xs:text-lg xs:p-4 sm:text-lg md:text-sm md:p-8 lg:text-xl xl:h-24 xl:text-2xl  p-8 w-full'>
-           <p className='text-center '>We aim to send 2000+ pairs of shoes every March and December</p> 
+           <p className='text-center '>We aim to send 2000+ pairs of shoes every March and August</p> 
         </div>
         <div className='rounded-lg bg-sky-600 border-8 border-solid border-sky-600 xl:h-auto text-white text-2xl xs:text-lg md:text-base  lg:text-xl xl:text-2xl xl:h-24  p-8 w-full text-center'>
-          <p className='text-center '>It costs around $1 to ship per pair of shoes, with a whole container costing $420. All donations go towards the shipment of donations</p>
+          <p className='text-center '>Current shipping costs equates to approximately $1 per pair of footwear, with each container costing $420. Your generous monetary donation will assist with covering these shipping charges.</p>
           </div>
           <div className='rounded-lg xl:h-auto  bg-sky-400 border-8 border-solid border-sky-400 text-white xs:text-lg xs:p-4 sm:text-lg md:text-sm md:p-8 lg:text-xl xl:h-24 xl:text-2xl  p-8 w-full'>
           {/* <h5 className='text-center uppercase font-bold '>Unable to get to the dropbox?</h5> */}
