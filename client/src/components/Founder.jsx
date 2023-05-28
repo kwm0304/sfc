@@ -34,9 +34,8 @@ const Founder = () => {
         </div>
       </div>
       <div className="relative">
-        <div></div>
       <div className="col xl:pt-40 xl:ml-40 md:pt-24 md:r-32 lg:mr-20 xs:mx-6 flex items-center ">
-      <div className=' bg-sky-400 pic p-4 w-64 h-24 xl:ml-32 xs:w-40 md:w-48 md:mr-24  xs:h-16 xs:text-base  xs:left-6 xl:mr-6  rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Joe McCutcheon</div>
+      <div className=' bg-sky-400 pic p-4 w-64 h-24 xl:ml-32 xs:w-40 md:w-48 md:mr-24 xs:top-0 xs:h-16 xs:text-base  xs:left-6 xl:mr-6  rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>Joe McCutcheon</div>
         <img src={joe} width={500} height={200} className='rounded-lg '/>
       </div>
       <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} className='pt-24'>
@@ -57,7 +56,7 @@ const Founder = () => {
 
           <div className='col xs:mx-6  xl:mx-0 relative  ml-20  md:mx-32 lg:mx-8'>
             <div className=" w-full yo xs:justify-center md:ml-14">
-            <div className=' bg-sky-400 pic p-4 w-64 h-24 xs:w-40 md:w-48 xs:h-16 xs:text-base  rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>The Allen's</div>
+            <div className=' bg-sky-400 pic p-4 w-64 h-24 xs:w-36 md:w-48 xs:h-16 xs:text-base  rounded-lg text-white flex justify-center items-center font-bold text-3xl absolute'>The Allen's</div>
             <img src={allens} width={400} className='rounded-lg md:w-5/6'/>
           </div>
           </div>
